@@ -4,18 +4,9 @@ import img from "../images/ife-grad.jpg";
 import { withRouter } from "react-router-dom";
 import PageTemplate from "./PageTemplate";
 
-const MainContainer = styled.section`
+const MainContainer = styled.div`
   display: flex;
-  width: 100%;
-  position: relative;
-  top: 20%;
-  -webkit-transform: translateY(-50%, -50%);
   justify-content: center;
-
-  main {
-    display: flex;
-    justify-content: center;
-  }
 
   div {
     width: 50%;
@@ -61,14 +52,9 @@ const MainContainer = styled.section`
   }
 
   @media (max-width: 980px) {
-    top: 10%;
     display: block;
-    text-align: center;
     div {
       margin: 0 auto;
-    }
-    main {
-      display: block;
     }
     h3 {
       justify-content: center;
@@ -82,30 +68,28 @@ const About = () => {
   return (
     <PageTemplate>
       <MainContainer>
-        <main>
-          <img alt="panda" src={img} />
-          <div>
-            <h3>About Me</h3>
-            <p>
-              My name is Ifeoluwa David Adese. I'm a 24 year old Software
-              Developer at Rebel.com from Lagos State, Nigeria. I love to design
-              and build user friendly and mobile responsive web applications.
-              However, in my free time, I enjoy playing soccer and watching
-              movies.
-            </p>
-            <h1>Educational Background</h1>
-            <ul>
-              <li>Software Engineering (Bachelors of Engineering)</li>
-              <li>Lakehead University - Thunder Bay, ON.</li>
-              <li>(2018 - 2021)</li>
-            </ul>
-            <ul>
-              <li>Computer Engineering (Advanced College Diploma)</li>
-              <li>Humber College - Toronto, ON.</li>
-              <li>(2014 - 2018)</li>
-            </ul>
-          </div>
-        </main>
+        <img alt="panda" src={img} />
+        <div>
+          <h3>About Me</h3>
+          <p>
+            My name is Ifeoluwa David Adese. I'm a 24 year old Software
+            Developer at Rebel.com from Lagos State, Nigeria. I love to design
+            and build user friendly and mobile responsive web applications.
+            However, in my free time, I enjoy playing soccer and watching
+            movies.
+          </p>
+          <h1>Educational Background</h1>
+          <ul>
+            <li>Software Engineering (Bachelors of Engineering)</li>
+            <li>Lakehead University - Thunder Bay, ON.</li>
+            <li>(2018 - 2021)</li>
+          </ul>
+          <ul>
+            <li>Computer Engineering (Advanced College Diploma)</li>
+            <li>Humber College - Toronto, ON.</li>
+            <li>(2014 - 2018)</li>
+          </ul>
+        </div>
       </MainContainer>
     </PageTemplate>
   );
