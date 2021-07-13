@@ -15,6 +15,11 @@ const NavBarContainer = styled.div`
   background-color: black;
   width: 30%;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
   @media (max-width: 1281px) {
     height: auto;
@@ -31,12 +36,11 @@ const NavBarContainer = styled.div`
 `;
 
 const NavBarItemsContainer = styled.section`
+  margin: 10px;
   width: fit-content;
-  margin: 0 auto;
-  position: relative;
-  top: 30%;
-  -webkit-transform: translateY(-50%, -50%);
+
   @media (max-width: 1281px) {
+    margin: 0;
     display: flex;
     width: 100%;
   }
