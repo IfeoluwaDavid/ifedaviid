@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Form } from "react-bootstrap";
 import { withRouter } from "react-router-dom";
-import { Button } from "react-bootstrap";
+import StyledButton from "../../src/components/Button";
 import PageTemplate from "./PageTemplate";
 
 const MainContainer = styled.div`
@@ -49,11 +49,6 @@ const MainContainer = styled.div`
   }
 `;
 
-const StyledButton = styled(Button)`
-  margin-top: 10px;
-  margin-bottom: 10px;
-`;
-
 const Contact = () => {
   return (
     <PageTemplate>
@@ -71,7 +66,7 @@ const Contact = () => {
             <Form.Group controlId="exampleForm.ControlTextarea1">
               <Form.Control as="textarea" rows={3} placeholder="Message" />
             </Form.Group>
-            <StyledButton variant="light"> Submit </StyledButton>
+            <StyledButton text="Submit" />
           </Form>
         </div>
       </MainContainer>

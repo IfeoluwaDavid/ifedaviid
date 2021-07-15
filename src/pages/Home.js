@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import img from "../images/ife.jpg";
 import { withRouter } from "react-router-dom";
-import { Button } from "react-bootstrap";
+import StyledButton from "../../src/components/Button";
 import PageTemplate from "./PageTemplate";
 
 const MainContainer = styled.div`
@@ -47,11 +47,6 @@ const MainContainer = styled.div`
   }
 `;
 
-const StyledButton = styled(Button)`
-  margin-top: 10px;
-  margin-bottom: 10px;
-`;
-
 const Home = () => {
   return (
     <PageTemplate>
@@ -63,7 +58,7 @@ const Home = () => {
             I'm a Software Developer based in Thunder Bay and I love to design
             and build web and mobile applications.
           </p>
-          <StyledButton variant="light"> Abeg Hire Me </StyledButton>
+          <StyledButton text="Abeg Hire Me" />
         </div>
       </MainContainer>
     </PageTemplate>

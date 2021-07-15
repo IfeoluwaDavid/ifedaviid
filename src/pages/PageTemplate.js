@@ -15,13 +15,14 @@ const Container = styled.body`
 const PageContainer = styled.div`
   background: #343434;
   width: 100%;
-  padding: 20px;
+  padding: 100px;
   min-height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  overflow: auto;
 `;
 
 const ContentContainer = styled.div`

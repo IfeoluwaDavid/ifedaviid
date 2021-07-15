@@ -26,6 +26,7 @@ const NavBarContainer = styled.div`
     padding-top: 15px;
     padding-bottom: 15px;
     width: 100%;
+    position: initial;
 
     div {
       display: flex;
@@ -161,6 +162,12 @@ const NavigationLinks = () => {
       </li>
       <li>
         <StyledLink to="/portfolio">Portfolio</StyledLink>
+      </li>
+      <li>
+        <StyledLink to="/reviews">Reviews</StyledLink>
+      </li>
+      <li>
+        <StyledLink to="/friends">Friends</StyledLink>
       </li>
       <li>
         <StyledLink to="/contact">Contact</StyledLink>

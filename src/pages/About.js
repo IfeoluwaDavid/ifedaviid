@@ -3,6 +3,7 @@ import styled from "styled-components";
 import img from "../images/ife-grad.jpg";
 import { withRouter } from "react-router-dom";
 import PageTemplate from "./PageTemplate";
+import StyledButton from "../../src/components/Button";
 
 const MainContainer = styled.div`
   display: flex;
@@ -73,22 +74,23 @@ const About = () => {
           <h3>About Me</h3>
           <p>
             My name is Ifeoluwa David Adese. I'm a 24 year old Software
-            Developer at Rebel.com from Lagos State, Nigeria. I love to design
-            and build user friendly and mobile responsive web applications.
-            However, in my free time, I enjoy playing soccer and watching
-            movies.
+            Developer at Rebel.com from Lagos State, Nigeria. I'm currently
+            based in Thunder Bay, Ontario where I attended University. I enjoy
+            playing soccer, watching movies, relaxing and making things look
+            visually appealing. I enjoy playing soccer, watching movies,
+            relaxing and making things look visually appealing.
           </p>
-          <h1>Educational Background</h1>
-          <ul>
-            <li>Software Engineering (Bachelors of Engineering)</li>
-            <li>Lakehead University - Thunder Bay, ON.</li>
-            <li>(2018 - 2021)</li>
-          </ul>
-          <ul>
-            <li>Computer Engineering (Advanced College Diploma)</li>
-            <li>Humber College - Toronto, ON.</li>
-            <li>(2014 - 2018)</li>
-          </ul>
+          <p>
+            As much as I love the idea of being a "full-stack" software
+            developer, I must say I seem to enjoy the design and front-end
+            development aspects of my projects, than the infrastructural and
+            back-end work. I enjoy playing soccer, watching movies, relaxing and
+            making things look visually appealing. I enjoy playing soccer,
+            watching movies, relaxing and making things look visually appealing.
+          </p>
+          <StyledButton text="Education" />
+          <StyledButton text="Work Experience" />
+          <StyledButton text="Skills" />
         </div>
       </MainContainer>
     </PageTemplate>
