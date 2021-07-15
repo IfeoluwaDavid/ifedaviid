@@ -15,7 +15,6 @@ const MainContainer = styled.div`
   }
 
   img {
-    position: relative;
     height: 480px;
     width: 320px;
     border-radius: 5%;
@@ -73,20 +72,17 @@ const About = () => {
         <div>
           <h3>About Me</h3>
           <p>
-            My name is Ifeoluwa David Adese. I'm a 24 year old Software
+            My name is Ifeoluwa David Adese. I'm a happy 24 year old Software
             Developer at Rebel.com from Lagos State, Nigeria. I'm currently
             based in Thunder Bay, Ontario where I attended University. I enjoy
             playing soccer, watching movies, relaxing and making things look
-            visually appealing. I enjoy playing soccer, watching movies,
-            relaxing and making things look visually appealing.
+            visually appealing.
           </p>
           <p>
             As much as I love the idea of being a "full-stack" software
             developer, I must say I seem to enjoy the design and front-end
             development aspects of my projects, than the infrastructural and
-            back-end work. I enjoy playing soccer, watching movies, relaxing and
-            making things look visually appealing. I enjoy playing soccer,
-            watching movies, relaxing and making things look visually appealing.
+            back-end work.
           </p>
           <StyledButton text="Education" />
           <StyledButton text="Work Experience" />

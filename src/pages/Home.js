@@ -15,7 +15,6 @@ const MainContainer = styled.div`
   }
 
   img {
-    position: relative;
     height: 220px;
     width: 220px;
     border-radius: 50%;

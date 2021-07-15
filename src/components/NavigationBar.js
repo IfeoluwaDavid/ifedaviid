@@ -26,7 +26,7 @@ const NavBarContainer = styled.div`
     padding-top: 15px;
     padding-bottom: 15px;
     width: 100%;
-    position: initial;
+    position: fixed;
 
     div {
       display: flex;
