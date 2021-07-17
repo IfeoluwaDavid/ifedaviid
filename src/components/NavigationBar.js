@@ -164,10 +164,7 @@ const NavigationLinks = () => {
         <StyledLink to="/portfolio">Portfolio</StyledLink>
       </li>
       <li>
-        <StyledLink to="/reviews">Reviews</StyledLink>
-      </li>
-      <li>
-        <StyledLink to="/friends">Friends</StyledLink>
+        <StyledLink to="/reviews">Recommendations</StyledLink>
       </li>
       <li>
         <StyledLink to="/contact">Contact</StyledLink>

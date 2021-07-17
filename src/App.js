@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
-import Friends from "./pages/Friends";
 import Reviews from "./pages/Reviews";
 
 const App = () => {
@@ -23,9 +22,6 @@ const App = () => {
         </Route>
         <Route path="/reviews">
           <Reviews />
-        </Route>
-        <Route path="/friends">
-          <Friends />
         </Route>
         <Route path="/contact">
           <Contact />

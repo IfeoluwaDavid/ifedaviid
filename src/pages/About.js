@@ -73,16 +73,15 @@ const About = () => {
           <h3>About Me</h3>
           <p>
             My name is Ifeoluwa David Adese. I'm a happy 24 year old Software
-            Developer at Rebel.com from Lagos State, Nigeria. I'm currently
-            based in Thunder Bay, Ontario where I attended University. I enjoy
-            playing soccer, watching movies, relaxing and making things look
-            visually appealing.
+            Developer at Rebel.com. I'm originally from Lagos State, Nigeria,
+            but I'm currently based in Thunder Bay, Ontario where I attended
+            University. I enjoy playing soccer, watching movies, relaxing and
+            making things look visually appealing.
           </p>
           <p>
-            As much as I love the idea of being a "full-stack" software
-            developer, I must say I seem to enjoy the design and front-end
-            development aspects of my projects, than the infrastructural and
-            back-end work.
+            My skillset most revolves around web development. However, I also
+            have strong interests and minimal experience with mobile application
+            development, data science and UI/UX design.
           </p>
           <StyledButton text="Education" />
           <StyledButton text="Work Experience" />
