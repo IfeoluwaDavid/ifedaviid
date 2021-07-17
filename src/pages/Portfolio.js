@@ -10,25 +10,8 @@ const MainContainer = styled.div`
   display: block;
   justify-content: center;
 
-  h3 {
-    width: auto;
-    color: white;
-    font-weight: bold;
-    font-size: 30px;
-    margin-bottom: 20px;
-    padding: 10px;
-  }
-
   p {
     letter-spacing: 1px;
-  }
-
-  @media (max-width: 980px) {
-    h3 {
-      justify-content: center;
-      margin-top: 40px;
-      margin-bottom: 20px;
-    }
   }
 `;
 
@@ -57,11 +40,48 @@ const Tag = styled(Badge)`
   margin: 5px;
 `;
 
+const TopContainer = styled.span`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  h3 {
+    width: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  a {
+    color: white;
+    text-decoration: underline;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 980px) {
+    display: block;
+    margin-bottom: 20px;
+    h3 {
+      justify-content: center;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+  }
+`;
+
 const Portfolio = () => {
   return (
     <PageTemplate>
       <MainContainer>
-        <h3>Past Projects</h3>
+        <TopContainer>
+          <h3>Completed Projects</h3>
+          <a href="https://github.com/IfeoluwaDavid?tab=repositories">
+            See All Projects
+          </a>
+        </TopContainer>
         <GridContainer>
           {projects.map((project) => {
             return (
@@ -69,7 +89,7 @@ const Portfolio = () => {
                 <Card.Body>
                   <Title>{project.title}</Title>
                   <Card.Text>{project.description}</Card.Text>
-                  <StyledButton text="See more" variant="dark" />
+                  <StyledButton text="See Demo Documentation" variant="dark" />
                 </Card.Body>
                 <Card.Footer>
                   Stack:{" "}

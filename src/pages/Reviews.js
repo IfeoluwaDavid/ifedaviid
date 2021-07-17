@@ -20,15 +20,6 @@ const MainContainer = styled.div`
     margin-right: 50px;
   }
 
-  h3 {
-    width: auto;
-    color: white;
-    font-weight: bold;
-    font-size: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
   div {
     width: auto;
     max-width: 1000px;
@@ -57,11 +48,6 @@ const MainContainer = styled.div`
       margin: 0px 0px 20px 0px;
       text-align: center;
     }
-    h3 {
-      justify-content: center;
-      margin-top: 40px;
-      margin-bottom: 20px;
-    }
   }
 `;
 
@@ -80,11 +66,49 @@ const QuoteIcon = styled(FontAwesomeIcon)`
   transform: scale(3);
 `;
 
+const TopContainer = styled.span`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  h3 {
+    width: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: white;
+    text-decoration: underline;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 980px) {
+    display: block;
+    margin-bottom: 20px;
+    h3 {
+      justify-content: center;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+  }
+`;
+
 const Reviews = () => {
   return (
     <PageTemplate>
       <MainContainer>
-        <h3>Recommendations</h3>
+        <TopContainer>
+          <h3>Recommendations</h3>
+          <a href="https://github.com/IfeoluwaDavid?tab=repositories">
+            Submit a Recommendation
+          </a>
+        </TopContainer>
+
         {comments.map((comment) => {
           return (
             <CommentContainer>
