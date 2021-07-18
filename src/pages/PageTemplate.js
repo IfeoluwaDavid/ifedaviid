@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import NavigationBar from "../components/NavigationBar";
 
-const Container = styled.body`
+const Container = styled.div`
   font-family: Montserrat;
   display: flex;
   height: 100vh;

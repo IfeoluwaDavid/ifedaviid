@@ -57,7 +57,7 @@ const CommentContainer = styled.div`
   background: white;
   padding: 10px 50px 10px 50px;
   border-radius: 10px;
-  margin: 20px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
 `;
 
 const QuoteIcon = styled(FontAwesomeIcon)`

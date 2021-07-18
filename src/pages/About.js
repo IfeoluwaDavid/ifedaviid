@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import img from "../images/ife-grad.jpg";
 import { withRouter } from "react-router-dom";
 import PageTemplate from "./PageTemplate";
 import StyledButton from "../../src/components/Button";
+import { PopUpModal, usePopUpModal } from "../components/Modal";
+import { Modal } from "react-bootstrap";
 
 const MainContainer = styled.div`
   display: flex;
@@ -65,6 +67,14 @@ const MainContainer = styled.div`
 `;
 
 const About = () => {
+  const EDUCATIONAL_BACKGROUND = "Educational Background";
+  const WORK_HISTORY = "Work History";
+  const SKILLSET = "Skills";
+
+  const [modalTitle, setModalTitle] = useState(null);
+  const [modalContent, setModalContent] = useState(null);
+  const { isShowing, toggle } = usePopUpModal();
+
   return (
     <PageTemplate>
       <MainContainer>
@@ -83,10 +93,40 @@ const About = () => {
             have strong interests and minimal experience with mobile application
             development, data science and UI/UX design.
           </p>
-          <StyledButton text="Education" />
-          <StyledButton text="Work Experience" />
-          <StyledButton text="Skills" />
+          <StyledButton
+            text={EDUCATIONAL_BACKGROUND}
+            onClick={() => {
+              setModalTitle(EDUCATIONAL_BACKGROUND);
+              setModalContent(
+                <Modal.Body>You just loaded your Educational info</Modal.Body>
+              );
+              toggle();
+            }}
+          />
+          <StyledButton
+            text={WORK_HISTORY}
+            onClick={() => {
+              setModalTitle(WORK_HISTORY);
+              setModalContent(
+                <Modal.Body>You just loaded your work history info</Modal.Body>
+              );
+              toggle();
+            }}
+          />
+          <StyledButton
+            text={SKILLSET}
+            onClick={() => {
+              setModalTitle(SKILLSET);
+              setModalContent(
+                <Modal.Body>You just loaded your skills info</Modal.Body>
+              );
+              toggle();
+            }}
+          />
         </div>
+        <PopUpModal title={modalTitle} isShowing={isShowing} hide={toggle}>
+          <Modal.Body>{modalContent}</Modal.Body>
+        </PopUpModal>
       </MainContainer>
     </PageTemplate>
   );
