@@ -6,11 +6,12 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import "./ModalBackdropStyle.css";
 
 const StyledModal = styled(Modal)`
-  height: 70%;
-  width: 80%;
+  height: 80%;
+  width: auto;
   position: fixed;
   top: 50%;
   left: 50%;
+  overflow: hidden;
   transform: translate(-50%, -50%);
 `;
 
@@ -30,14 +31,15 @@ const PopUpModal = ({ isShowing, hide, children, title }) => {
     <StyledModal
       show={isShowing}
       onHide={hide}
-      backdropClassName="custom-back-drop"
+      backdropClassName="custom-back-drop-styling"
+      dialogClassName="custom-dialog-styling"
       centered
     >
       <Modal.Header>
         <Modal.Title>{title}</Modal.Title>
         <CloseIcon icon={faTimes} onClick={hide} />
       </Modal.Header>
-      <Modal.Body>{children}</Modal.Body>
+      <Modal.Body scrollable={true}>{children}</Modal.Body>
     </StyledModal>
   );
 };

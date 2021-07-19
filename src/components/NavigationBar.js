@@ -77,6 +77,7 @@ const StyledNavTitle = styled.h3`
   color: white;
   font-weight: bold;
   letter-spacing: 3px;
+  margin: 3px 0px 3px 0px;
 
   @media (max-width: 1281px) {
     float: right;
