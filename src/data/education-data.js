@@ -1,0 +1,42 @@
+export const educationHistory = [
+  {
+    institutionLogo: "../../images/lakehead.png",
+    institutionName: "Lakehead University",
+    location: "Thunder Bay, Ontario, Canada",
+    field: "Software Engineering",
+    award: "Bachelors of Engineering",
+    duration: "2018 - 2021",
+  },
+  {
+    institutionLogo: "../../images/humber.png",
+    institutionName: "Humber College",
+    location: "Toronto, Ontario, Canada",
+    field: "Computer Engineering Technology",
+    award: "Advanced Diploma",
+    duration: "2014 - 2018",
+  },
+  {
+    institutionLogo: require("../images/niit.jpg"),
+    institutionName: "National Institute of Information Technology (NIIT)",
+    location: "Lagos, Nigeria",
+    field: "Graphic Design",
+    award: "Course Participation Certificate",
+    duration: "2014 - 2014",
+  },
+  {
+    institutionLogo: require("../images/cayley.jpg"),
+    institutionName: "Covenant University",
+    location: "Ogun State, Nigeria",
+    field: "Building Technology",
+    award: "Transferred",
+    duration: "2013 - 2014",
+  },
+  {
+    institutionLogo: require("../images/cayley.jpg"),
+    institutionName: "Cayley College",
+    location: "Lagos State, Nigeria",
+    field: "Sciences",
+    award: "High School Certificate",
+    duration: "2007 - 2013",
+  },
+];

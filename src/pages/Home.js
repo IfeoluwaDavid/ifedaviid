@@ -50,7 +50,7 @@ const Home = () => {
   return (
     <PageTemplate>
       <MainContainer>
-        <img alt="panda" src={img} />
+        <img alt="ProfilePhoto" src={img} />
         <div>
           <h3>Ifeoluwa David Adese</h3>
           <p>

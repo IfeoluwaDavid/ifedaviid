@@ -6,6 +6,7 @@ import PageTemplate from "./PageTemplate";
 import StyledButton from "../../src/components/Button";
 import { PopUpModal, usePopUpModal } from "../components/Modal";
 import { Modal } from "react-bootstrap";
+import { EducationalBackground, WorkHistory, Skills } from "../pages/modals";
 
 const MainContainer = styled.div`
   display: flex;
@@ -85,21 +86,20 @@ const About = () => {
             My name is Ifeoluwa David Adese. I'm a happy 24 year old Software
             Developer at Rebel.com. I'm originally from Lagos State, Nigeria,
             but I'm currently based in Thunder Bay, Ontario where I attended
-            University. I enjoy playing soccer, watching movies, relaxing and
-            making things look visually appealing.
+            University.
           </p>
           <p>
-            My skillset most revolves around web development. However, I also
+            My skillset mostly revolves around web development. However, I also
             have strong interests and minimal experience with mobile application
-            development, data science and UI/UX design.
+            development, data science and UI/UX design. In my free time, I enjoy
+            playing soccer, watching movies, relaxing and making things look
+            visually appealing.
           </p>
           <StyledButton
             text={EDUCATIONAL_BACKGROUND}
             onClick={() => {
               setModalTitle(EDUCATIONAL_BACKGROUND);
-              setModalContent(
-                <Modal.Body>You just loaded your Educational info</Modal.Body>
-              );
+              setModalContent(<EducationalBackground />);
               toggle();
             }}
           />
@@ -107,9 +107,7 @@ const About = () => {
             text={WORK_HISTORY}
             onClick={() => {
               setModalTitle(WORK_HISTORY);
-              setModalContent(
-                <Modal.Body>You just loaded your work history info</Modal.Body>
-              );
+              setModalContent(<WorkHistory />);
               toggle();
             }}
           />
@@ -117,9 +115,7 @@ const About = () => {
             text={SKILLSET}
             onClick={() => {
               setModalTitle(SKILLSET);
-              setModalContent(
-                <Modal.Body>You just loaded your skills info</Modal.Body>
-              );
+              setModalContent(<Skills />);
               toggle();
             }}
           />
