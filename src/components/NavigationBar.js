@@ -15,12 +15,18 @@ const NavBarContainer = styled.div`
   background-color: black;
   width: 30%;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
   @media (max-width: 1281px) {
     height: auto;
     padding-top: 15px;
     padding-bottom: 15px;
     width: 100%;
+    position: fixed;
 
     div {
       display: flex;
@@ -31,12 +37,11 @@ const NavBarContainer = styled.div`
 `;
 
 const NavBarItemsContainer = styled.section`
+  margin: 10px;
   width: fit-content;
-  margin: 0 auto;
-  position: relative;
-  top: 30%;
-  -webkit-transform: translateY(-50%, -50%);
+
   @media (max-width: 1281px) {
+    margin: 0;
     display: flex;
     width: 100%;
   }
@@ -72,6 +77,7 @@ const StyledNavTitle = styled.h3`
   color: white;
   font-weight: bold;
   letter-spacing: 3px;
+  margin: 3px 0px 3px 0px;
 
   @media (max-width: 1281px) {
     float: right;
@@ -157,6 +163,9 @@ const NavigationLinks = () => {
       </li>
       <li>
         <StyledLink to="/portfolio">Portfolio</StyledLink>
+      </li>
+      <li>
+        <StyledLink to="/reviews">Recommendations</StyledLink>
       </li>
       <li>
         <StyledLink to="/contact">Contact</StyledLink>

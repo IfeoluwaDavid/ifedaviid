@@ -2,21 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import img from "../images/ife.jpg";
 import { withRouter } from "react-router-dom";
-import { Button } from "react-bootstrap";
+import StyledButton from "../../src/components/Button";
 import PageTemplate from "./PageTemplate";
 
-const ProfileSummaryContainer = styled.section`
+const MainContainer = styled.div`
   display: flex;
-  width: 100%;
-  position: relative;
-  top: 30%;
-  -webkit-transform: translateY(-50%, -50%);
   justify-content: center;
-
-  main {
-    display: flex;
-    justify-content: center;
-  }
 
   div {
     width: 50%;
@@ -24,7 +15,6 @@ const ProfileSummaryContainer = styled.section`
   }
 
   img {
-    position: relative;
     height: 220px;
     width: 220px;
     border-radius: 50%;
@@ -46,14 +36,9 @@ const ProfileSummaryContainer = styled.section`
   }
 
   @media (max-width: 980px) {
-    top: 10%;
     display: block;
-    text-align: center;
     div {
       margin: 0 auto;
-    }
-    main {
-      display: block;
     }
     h3 {
       justify-content: center;
@@ -61,27 +46,20 @@ const ProfileSummaryContainer = styled.section`
   }
 `;
 
-const StyledButton = styled(Button)`
-  margin-top: 10px;
-  margin-bottom: 10px;
-`;
-
 const Home = () => {
   return (
     <PageTemplate>
-      <ProfileSummaryContainer>
-        <main>
-          <img alt="panda" src={img} />
-          <div>
-            <h3>Ifeoluwa David Adese</h3>
-            <p>
-              I'm a Software Developer based in Thunder Bay and I love to design
-              and build web and mobile applications.
-            </p>
-            <StyledButton variant="light"> Abeg Hire Me </StyledButton>
-          </div>
-        </main>
-      </ProfileSummaryContainer>
+      <MainContainer>
+        <img alt="ProfilePhoto" src={img} />
+        <div>
+          <h3>Ifeoluwa David Adese</h3>
+          <p>
+            I'm a Software Developer based in Thunder Bay and I love to design
+            and build web and mobile applications.
+          </p>
+          <StyledButton text="Abeg Hire Me" />
+        </div>
+      </MainContainer>
     </PageTemplate>
   );
 };

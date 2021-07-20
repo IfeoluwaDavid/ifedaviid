@@ -1,0 +1,43 @@
+[
+    {
+        "skill": "React",
+        "yearsOfExperience": "1-2 years"
+    },
+    {
+        "skill": "Javascript",
+        "yearsOfExperience": "1-2 years"
+    },
+    {
+        "skill": "AWS",
+        "yearsOfExperience": "< 1 year"
+    },
+    {
+        "skill": "Serverless",
+        "yearsOfExperience": "< 1 year"
+    },
+    {
+        "skill": "Node/Express",
+        "yearsOfExperience": "< 1 year"
+    },
+    {
+        "skill": "Java",
+        "yearsOfExperience": "1-2 years"
+    },
+    {
+        "skill": "RDBM (MySQL)",
+        "yearsOfExperience": "1-2 years"
+    },
+    {
+        "skill": "PHP",
+        "yearsOfExperience": "2+ years"
+    },
+    {
+        "skill": "HTML/CSS",
+        "yearsOfExperience": "3+ years"
+    },
+    {
+        "skill": "Machine Learning (Python)",
+        "yearsOfExperience": "< 1 year"
+    }
+]
+  

@@ -1,0 +1,10 @@
+.custom-back-drop-styling {
+  width: 100%;
+  height: 100%;
+}
+
+.custom-dialog-styling {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
