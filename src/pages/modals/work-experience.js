@@ -16,7 +16,11 @@ const MainContainer = styled.div`
 
 const DataContainer = styled.div`
   display: block;
-  width: 100%;
+  width: 400px;
+
+  @media (max-width: 980px) {
+    width: auto;
+  }
 `;
 
 const WorkHistory = () => {

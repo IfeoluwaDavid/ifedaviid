@@ -28,9 +28,6 @@ const DataContainer = styled.span`
 
   @media (max-width: 980px) {
     display: block;
-    div {
-      margin: 0 auto;
-    }
     span {
       justify-content: center;
       display: block;
