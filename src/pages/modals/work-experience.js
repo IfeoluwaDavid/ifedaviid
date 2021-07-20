@@ -1,16 +1,39 @@
 import React from "react";
 import styled from "styled-components";
-import { Modal } from "react-bootstrap";
+const history = require("../../../src/data/work-history-data.json");
 
 const MainContainer = styled.div`
-  @media (max-width: 980px) {
+  display: flex;
+  p {
+    margin-bottom: 1px;
   }
+
+  img {
+    height: 100px;
+    width: 100px;
+  }
+`;
+
+const DataContainer = styled.div`
+  display: block;
+  width: 100%;
 `;
 
 const WorkHistory = () => {
   return (
     <>
-      <Modal.Body>Woohoo, you're reading work history info</Modal.Body>
+      {history.map((obj, key) => {
+        return (
+          <MainContainer>
+            <DataContainer>
+              <p>{obj.company}</p>
+              <p>{obj.position}</p>
+              <p>{obj.duration}</p>
+              <hr />
+            </DataContainer>
+          </MainContainer>
+        );
+      })}
     </>
   );
 };
