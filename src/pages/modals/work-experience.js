@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Modal } from "react-bootstrap";
 const history = require("../../../src/data/work-history-data.json");
 
 const MainContainer = styled.div`
@@ -25,7 +26,7 @@ const DataContainer = styled.div`
 
 const WorkHistory = () => {
   return (
-    <>
+    <Modal.Body>
       {history.map((obj, key) => {
         return (
           <MainContainer>
@@ -38,7 +39,7 @@ const WorkHistory = () => {
           </MainContainer>
         );
       })}
-    </>
+    </Modal.Body>
   );
 };
 

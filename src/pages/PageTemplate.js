@@ -16,7 +16,7 @@ const PageContainer = styled.div`
   background: #343434;
   width: 100%;
   padding: 100px;
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -37,6 +37,7 @@ const ContentContainer = styled.div`
 
   @media (max-width: 980px) {
     top: 10%;
+    height: 100%;
     text-align: center;
 
     div {

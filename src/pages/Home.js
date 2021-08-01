@@ -39,6 +39,7 @@ const MainContainer = styled.div`
     display: block;
     div {
       margin: 0 auto;
+      width: 100%;
     }
     h3 {
       justify-content: center;

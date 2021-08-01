@@ -5,7 +5,6 @@ import { withRouter } from "react-router-dom";
 import PageTemplate from "./PageTemplate";
 import StyledButton from "../../src/components/Button";
 import { PopUpModal, usePopUpModal } from "../components/Modal";
-import { Modal } from "react-bootstrap";
 import { EducationalBackground, WorkHistory, Skills } from "../pages/modals";
 
 const MainContainer = styled.div`
@@ -57,6 +56,7 @@ const MainContainer = styled.div`
   @media (max-width: 980px) {
     display: block;
     div {
+      width: 100%;
       margin: 0 auto;
     }
     h3 {
@@ -121,7 +121,7 @@ const About = () => {
           />
         </div>
         <PopUpModal title={modalTitle} isShowing={isShowing} hide={toggle}>
-          <Modal.Body>{modalContent}</Modal.Body>
+          {modalContent}
         </PopUpModal>
       </MainContainer>
     </PageTemplate>

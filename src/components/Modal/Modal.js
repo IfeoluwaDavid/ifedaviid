@@ -7,12 +7,16 @@ import "./ModalBackdropStyle.css";
 
 const StyledModal = styled(Modal)`
   height: 80%;
-  width: auto;
+  width: 500px;
   position: fixed;
   top: 50%;
   left: 50%;
   overflow: hidden;
   transform: translate(-50%, -50%);
+
+  @media (max-width: 980px) {
+    width: 90%;
+  }
 `;
 
 const CloseIcon = styled(FontAwesomeIcon)`
@@ -39,7 +43,7 @@ const PopUpModal = ({ isShowing, hide, children, title }) => {
         <Modal.Title>{title}</Modal.Title>
         <CloseIcon icon={faTimes} onClick={hide} />
       </Modal.Header>
-      <Modal.Body scrollable={true}>{children}</Modal.Body>
+      {children}
     </StyledModal>
   );
 };

@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import { Modal } from "react-bootstrap";
 const skills = require("../../../src/data/skills-data.json");
 
 const MainContainer = styled.div`
   display: flex;
-  width: auto;
   p {
     margin-bottom: 1px;
   }
@@ -37,7 +37,7 @@ const DataContainer = styled.span`
 
 const Skills = () => {
   return (
-    <>
+    <Modal.Body>
       {skills.map((skill, key) => {
         return (
           <MainContainer>
@@ -52,7 +52,7 @@ const Skills = () => {
           </MainContainer>
         );
       })}
-    </>
+    </Modal.Body>
   );
 };
 
