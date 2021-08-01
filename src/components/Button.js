@@ -6,12 +6,13 @@ const MyStyledButton = styled(Button)`
   margin-bottom: 10px;
 `;
 
-const StyledButton = ({ text, variant, onClick }) => {
+const StyledButton = ({ text, variant, type, onClick }) => {
   return (
     <MyStyledButton
       style={{ marginRight: "10px" }}
       variant={variant || "light"}
       onClick={onClick}
+      type={type}
     >
       {text}
     </MyStyledButton>

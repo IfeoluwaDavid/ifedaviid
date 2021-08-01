@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Modal } from "react-bootstrap";
 
 import { educationHistory } from "../../data/education-data";
 
@@ -24,7 +25,7 @@ const DataContainer = styled.div`
 
 const EducationalBackground = () => {
   return (
-    <>
+    <Modal.Body>
       {educationHistory.map((school, key) => {
         return (
           <MainContainer>
@@ -41,7 +42,7 @@ const EducationalBackground = () => {
           </MainContainer>
         );
       })}
-    </>
+    </Modal.Body>
   );
 };
 
