@@ -1,0 +1,53 @@
+.main-container {
+  font-family: Montserrat;
+  display: flex;
+  height: 100vh;
+  min-width: 400px;
+}
+
+.page-container {
+  background: #343434;
+  width: 100%;
+  padding: 100px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.page-content-container {
+  height: auto;
+  margin: 10px;
+  width: auto;
+}
+
+.section-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 980px) {
+  .page-content-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .content-container {
+    top: 10%;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1281px) {
+  .section-container {
+    width: 100%;
+  }
+
+  .main-container {
+    display: block;
+  }
+}

@@ -1,0 +1,54 @@
+.contact-page-content {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-page-header {
+  width: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-error-message {
+  margin-top: 5px;
+  color: red;
+  font-weight: bold;
+}
+
+.contact-page-subheader {
+  color: #bbb;
+  letter-spacing: 1px;
+}
+
+.contact-page-form-container {
+  min-width: 300px;
+}
+
+.success-message-container {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  border-radius: 10px;
+  background-color: white;
+  border: 2px solid #343434;
+}
+
+.success-message {
+  text-align: center;
+  padding: 15px;
+}
+
+.success-message-icon {
+  color: #343434;
+  margin: 40px;
+  height: 80px;
+}
+
+@media (max-width: 980px) {
+  .contact-page-content {
+    display: block;
+  }
+}

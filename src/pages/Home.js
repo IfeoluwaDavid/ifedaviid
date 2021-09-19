@@ -1,66 +1,28 @@
 import React from "react";
-import styled from "styled-components";
-import img from "../images/ife.jpg";
 import { withRouter } from "react-router-dom";
+import img from "../images/ife.jpg";
 import StyledButton from "../../src/components/Button";
 import PageTemplate from "./PageTemplate";
-
-const MainContainer = styled.div`
-  display: flex;
-  justify-content: center;
-
-  div {
-    width: 50%;
-    margin-left: 50px;
-  }
-
-  img {
-    height: 220px;
-    width: 220px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  h3 {
-    width: auto;
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  p {
-    color: #bbb;
-    letter-spacing: 1px;
-  }
-
-  @media (max-width: 980px) {
-    display: block;
-    div {
-      margin: 0 auto;
-      width: 100%;
-    }
-    h3 {
-      justify-content: center;
-    }
-  }
-`;
+import "./Home.css";
 
 const Home = () => {
   return (
     <PageTemplate>
-      <MainContainer>
-        <img alt="ProfilePhoto" src={img} />
-        <div>
-          <h3>Ifeoluwa David Adese</h3>
-          <p>
+      <div className="home-page-content">
+        <div className="home-page-content-img-container">
+          <img className="home-page-content-img" alt="ProfilePhoto" src={img} />
+        </div>
+        <div className="home-page-content-text">
+          <h3 className="home-page-content-text-header">
+            Ifeoluwa David Adese
+          </h3>
+          <p className="home-page-content-text-desc">
             I'm a Software Developer based in Thunder Bay and I love to design
             and build web and mobile applications.
           </p>
-          <StyledButton text="Abeg Hire Me" />
+          <StyledButton text="View Portfolio" />
         </div>
-      </MainContainer>
+      </div>
     </PageTemplate>
   );
 };
