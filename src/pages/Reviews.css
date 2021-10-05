@@ -1,0 +1,121 @@
+.reviews-page-content {
+  width: 800px;
+  display: block;
+  justify-content: center;
+}
+
+.reviews-page-comment-container {
+  width: auto;
+  max-width: 1000px;
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.reviews-page-quote-icon {
+  color: #343434;
+  margin: 40px;
+  height: 80px;
+}
+
+.reviews-page-comments-list-container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews-page-header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews-page-header {
+  width: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.reviews-page-header-link {
+  color: white;
+  text-decoration: underline;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.reviews-page-quote-icon-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  margin-right: 50px;
+}
+
+.p-small-strong {
+  color: #343434;
+  letter-spacing: 1px;
+}
+
+.no-comments-placeholder-container {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  border-radius: 10px;
+  background-color: white;
+  border: 2px solid #343434;
+}
+
+.no-comments-prompt {
+  width: 50%;
+  display: block;
+  align-self: center;
+  text-align: center;
+}
+
+.reviews-page-comment-item {
+  display: flex;
+  justify-content: center;
+  background: white;
+  padding: 20px 50px 20px 50px;
+  border-radius: 10px;
+  margin: 0px 0px 20px 0px;
+}
+
+.rejection-message {
+  align-self: center;
+}
+
+@media (max-width: 1281px) {
+  .reviews-page-header-container {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .reviews-page-comment-item {
+    display: block;
+    padding: 20px 40px 20px 40px;
+  }
+  .reviews-page-quote-icon-container {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .reviews-page-comment-container {
+    text-align: center;
+  }
+  .reviews-page-content {
+    min-width: 300px;
+  }
+  .no-comments-placeholder-container {
+    padding: 20px;
+    height: 350px;
+  }
+  .no-comments-prompt {
+    width: 80%;
+  }
+}
