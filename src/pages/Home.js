@@ -4,6 +4,7 @@ import img from "../images/ife.jpg";
 import StyledButton from "../../src/components/Button";
 import PageTemplate from "./PageTemplate";
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -20,7 +21,9 @@ const Home = () => {
             I'm a Software Developer based in Thunder Bay and I love to design
             and build web and mobile applications.
           </p>
-          <StyledButton text="View Portfolio" />
+          <Link to="/portfolio">
+            <StyledButton text="View Portfolio" />
+          </Link>
         </div>
       </div>
     </PageTemplate>

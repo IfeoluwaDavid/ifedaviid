@@ -6,6 +6,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import SocialIcons from "./social-icons";
 import DesktopNavLinks from "./desktop-nav-links";
 import MobileNavLinks from "./mobile-nav-links";
+import { Link } from "react-router-dom";
 
 const NavBarContainer = styled.div`
   background-color: black;
@@ -60,7 +61,9 @@ const StyledNavTitle = styled.h3`
   font-size: 30px;
   letter-spacing: 3px;
   margin: 3px 0px 3px 0px;
+`;
 
+const HomeLink = styled(Link)`
   @media (max-width: 1281px) {
     float: right;
     width: 100%;
@@ -78,7 +81,9 @@ const NavigationBar = () => {
     <NavBarContainer>
       <NavBarItemsContainer>
         <MenuIcon icon={faBars} onClick={() => toggleMobileNav()} />
-        <StyledNavTitle>IFEDAVIID</StyledNavTitle>
+        <HomeLink to="/home">
+          <StyledNavTitle>IFEDAVIID</StyledNavTitle>
+        </HomeLink>
         <DesktopNavLinks />
         <SocialIcons />
       </NavBarItemsContainer>
