@@ -7,6 +7,9 @@ const pages = require("../../data/navigation-data.json");
 const MobileLinks = styled.div`
   flex-direction: column;
   padding: 10px 15px 0px 15px;
+  @media screen and (min-width: 1281px) {
+    display: none;
+  }
 `;
 
 const Button = styled(StyledButton)`
