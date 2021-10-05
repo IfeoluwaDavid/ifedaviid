@@ -26,11 +26,21 @@ const SocialIcon = styled(FontAwesomeIcon)`
 const SocialIcons = () => {
   return (
     <IconGroup>
-      <SocialIcon icon={faFacebookF} />
-      <SocialIcon icon={faInstagram} />
-      <SocialIcon icon={faGithub} />
-      <SocialIcon icon={faLinkedin} />
-      <SocialIcon icon={faYahoo} />
+      <a href="https://www.facebook.com/ifedaviid">
+        <SocialIcon icon={faFacebookF} />
+      </a>
+      <a href="https://www.instagram.com/ifedaviid/">
+        <SocialIcon icon={faInstagram} />
+      </a>
+      <a href="https://github.com/IfeoluwaDavid">
+        <SocialIcon icon={faGithub} />
+      </a>
+      <a href="https://www.linkedin.com/in/ife-david-adese-194a56a8/">
+        <SocialIcon icon={faLinkedin} />
+      </a>
+      <a href="/contact">
+        <SocialIcon icon={faYahoo} />
+      </a>
     </IconGroup>
   );
 };
