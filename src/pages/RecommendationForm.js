@@ -1,32 +1,42 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { Form, Alert, Modal } from "react-bootstrap";
+import { Formik } from "formik";
+import * as Yup from "yup";
+
+import greenCheckMarkIcon from "../../src/icons/green-checkmark.png";
 import StyledButton from "../../src/components/Button";
 import { PopUpModal, usePopUpModal } from "../components/Modal";
+import { hasMissingValues } from "../utilities/helpers";
 import "./Contact.css";
 
 const sendEmailConfig = require("../../src/config/send-ref-config.json");
 
 const RecommendationForm = ({ setShowRecommendationForm }) => {
-  const [senderName, setSenderName] = useState("");
-  const [senderEmail, setSenderEmail] = useState("");
-  const [senderMessage, setSenderMessage] = useState("");
-  const [feedbackMessage, setFeedbackMessage] = useState(null);
-  const [showFeedbackMessage, setShowFeedbackMessage] = useState(false);
-  const [emailSentSuccessfully, setEmailSentSuccessfully] = useState(null);
-
+  const [formData, setFormData] = useState({});
+  const [errorMessage, setErrorMessage] = useState(null);
+  const [successMessage, setSuccessMessage] = useState(null);
   const { isShowing, toggle } = usePopUpModal();
 
-  let templateParams = {
-    sender_name: senderName,
-    reply_to: senderEmail,
-    sender_message: senderMessage,
-  };
+  const referenceSchema = Yup.object().shape({
+    sender_name: Yup.string()
+      .min(2, "Your name seems a little too short!")
+      .max(50, "Don't you think this is too long?")
+      .required("I'll need your full name please.."),
+    sender_message: Yup.string()
+      .min(10, "Come on, you can say more..")
+      .max(
+        1000,
+        "Love the energy, but I think that's a little too much for anyone to read!"
+      )
+      .required("This field is required"),
+    reply_to: Yup.string()
+      .email("How about a real email?")
+      .required("I'll need your email.."),
+  });
 
-  const resetSenderStates = () => {
-    setSenderName("");
-    setSenderEmail("");
-    setSenderMessage("");
+  const renderErrorMessage = (message) => {
+    return <p className="contact-error-message">{message}</p>;
   };
 
   const callSendEmail = () => {
@@ -34,26 +44,19 @@ const RecommendationForm = ({ setShowRecommendationForm }) => {
       .send(
         sendEmailConfig.serviceID,
         sendEmailConfig.templateID,
-        templateParams,
+        formData,
         sendEmailConfig.userID
       )
       .then(
         () => {
-          setEmailSentSuccessfully(true);
-          setFeedbackMessage(
+          setSuccessMessage(
             "Thanks for the reference! Hoping it was a positive one. :)"
           );
-          setShowFeedbackMessage(true);
-          resetSenderStates();
-          toggle();
         },
         () => {
-          setEmailSentSuccessfully(false);
-          setFeedbackMessage(
+          setErrorMessage(
             "Oops! Not sure what happened there but your reference wasn't sent!"
           );
-          resetSenderStates();
-          toggle();
         }
       );
   };
@@ -66,49 +69,100 @@ const RecommendationForm = ({ setShowRecommendationForm }) => {
           <strong>Note:</strong> I'll only be showcasing references with a
           professional background.
         </p>
-        {showFeedbackMessage && (
+        {errorMessage && (
           <Alert
-            onClose={() => setShowFeedbackMessage(false)}
+            onClose={() => setErrorMessage(false)}
             dismissible
-            variant={emailSentSuccessfully ? "success" : "danger"}
+            variant="danger"
           >
-            {feedbackMessage}
+            {errorMessage}
           </Alert>
         )}
-        <Form>
-          <Form.Group controlId="exampleForm.ControlInput1">
-            <Form.Control
-              type="text"
-              placeholder="Name"
-              value={senderName}
-              onChange={(event) => setSenderName(event.target.value)}
-            />
-          </Form.Group>
-          <Form.Group controlId="exampleForm.ControlInput1">
-            <Form.Control
-              type="email"
-              placeholder="Email Address"
-              value={senderEmail}
-              onChange={(event) => setSenderEmail(event.target.value)}
-            />
-          </Form.Group>
-          <Form.Group controlId="exampleForm.ControlTextarea1">
-            <Form.Control
-              as="textarea"
-              rows={3}
-              placeholder="Message"
-              value={senderMessage}
-              onChange={(event) => setSenderMessage(event.target.value)}
-            />
-          </Form.Group>
-          <StyledButton text="Submit" onClick={toggle} />
-          <StyledButton
-            text="Return to References page"
-            variant="link"
-            style={{ color: "#ffffff" }}
-            onClick={() => setShowRecommendationForm(false)}
-          />
-        </Form>
+        {successMessage ? (
+          <div className="success-message-container">
+            <div className="success-message">
+              <img
+                className="success-message-icon"
+                alt="CheckmarkIcon"
+                src={greenCheckMarkIcon}
+              />
+              <p>{successMessage}</p>
+              <StyledButton
+                text="Dismiss"
+                variant="link"
+                style={{ color: "#000000", textDecoration: "underline" }}
+                onClick={() => setSuccessMessage(false)}
+              />
+            </div>
+          </div>
+        ) : (
+          <Formik
+            initialValues={{
+              sender_name: "",
+              reply_to: "",
+              sender_message: "",
+            }}
+            validationSchema={referenceSchema}
+          >
+            {({ values, errors, touched, handleBlur, handleChange }) => (
+              <Form>
+                <Form.Group controlId="exampleForm.ControlInput1">
+                  <Form.Control
+                    type="text"
+                    placeholder="Name"
+                    name="sender_name"
+                    value={values.sender_name}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                  />
+                  {errors.sender_name && touched.sender_name
+                    ? renderErrorMessage(errors.sender_name)
+                    : null}
+                </Form.Group>
+                <Form.Group controlId="exampleForm.ControlInput1">
+                  <Form.Control
+                    type="email"
+                    placeholder="Email Address"
+                    name="reply_to"
+                    value={values.reply_to}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                  />
+                  {errors.reply_to && touched.reply_to
+                    ? renderErrorMessage(errors.reply_to)
+                    : null}
+                </Form.Group>
+                <Form.Group controlId="exampleForm.ControlTextarea1">
+                  <Form.Control
+                    as="textarea"
+                    rows={3}
+                    placeholder="Message"
+                    name="sender_message"
+                    value={values.sender_message}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                  />
+                  {errors.sender_message && touched.sender_message
+                    ? renderErrorMessage(errors.sender_message)
+                    : null}
+                </Form.Group>
+                <StyledButton
+                  text="Submit"
+                  onClick={() => {
+                    setFormData(values);
+                    toggle();
+                  }}
+                />
+                <StyledButton
+                  text="Return to References"
+                  variant="link"
+                  style={{ color: "#ffffff" }}
+                  onClick={() => setShowRecommendationForm(false)}
+                />
+              </Form>
+            )}
+          </Formik>
+        )}
       </div>
       <PopUpModal
         title="Just Confirming..."
@@ -123,7 +177,14 @@ const RecommendationForm = ({ setShowRecommendationForm }) => {
           <StyledButton
             text="Yes, Send it!"
             variant="dark"
-            onClick={() => callSendEmail()}
+            onClick={() => {
+              if (hasMissingValues(formData)) {
+                setErrorMessage("Some required fields are missing.");
+              } else {
+                callSendEmail();
+              }
+              toggle();
+            }}
           />
         </Modal.Footer>
       </PopUpModal>

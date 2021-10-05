@@ -5,10 +5,11 @@ import { Form, Alert, Modal } from "react-bootstrap";
 import { withRouter } from "react-router-dom";
 import * as Yup from "yup";
 
-import quoteIcon from "../../src/icons/green-checkmark.png";
+import greenCheckMarkIcon from "../../src/icons/green-checkmark.png";
 import StyledButton from "../../src/components/Button";
 import PageTemplate from "./PageTemplate";
 import { PopUpModal, usePopUpModal } from "../components/Modal";
+import { hasMissingValues } from "../utilities/helpers";
 import "./Contact.css";
 
 const sendEmailConfig = require("../../src/config/send-email-config.json");
@@ -17,7 +18,6 @@ const Contact = () => {
   const [formData, setFormData] = useState({});
   const [errorMessage, setErrorMessage] = useState(null);
   const [successMessage, setSuccessMessage] = useState(null);
-  const [emailSentSuccessfully, setEmailSentSuccessfully] = useState(null);
   const { isShowing, toggle } = usePopUpModal();
 
   const contactSchema = Yup.object().shape({
@@ -51,18 +51,14 @@ const Contact = () => {
       )
       .then(
         () => {
-          setEmailSentSuccessfully(true);
           setSuccessMessage(
             "Thanks! I've received your message, I'll get back you shortly!"
           );
-          toggle();
         },
         () => {
-          setEmailSentSuccessfully(false);
           setErrorMessage(
             "Oops! Not sure what happened there but your message wasn't sent!"
           );
-          toggle();
         }
       );
   };
@@ -79,7 +75,7 @@ const Contact = () => {
             <Alert
               onClose={() => setErrorMessage(false)}
               dismissible
-              variant={emailSentSuccessfully ? "success" : "danger"}
+              variant="danger"
             >
               {errorMessage}
             </Alert>
@@ -90,7 +86,7 @@ const Contact = () => {
                 <img
                   className="success-message-icon"
                   alt="CheckmarkIcon"
-                  src={quoteIcon}
+                  src={greenCheckMarkIcon}
                 />
                 <p>{successMessage}</p>
                 <StyledButton
@@ -178,7 +174,14 @@ const Contact = () => {
             <StyledButton
               text="Yes, Send it!"
               variant="dark"
-              onClick={() => callSendEmail()}
+              onClick={() => {
+                if (hasMissingValues(formData)) {
+                  setErrorMessage("Some required fields are missing.");
+                } else {
+                  callSendEmail();
+                }
+                toggle();
+              }}
             />
           </Modal.Footer>
         </PopUpModal>
