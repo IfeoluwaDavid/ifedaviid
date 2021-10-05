@@ -4,6 +4,11 @@ import styled from "styled-components";
 const StyledLink = styled(Link)`
   color: #bbb;
   text-decoration: none;
+  :hover {
+    margin-left: 0.5rem;
+    color: white;
+    font-weight: bold;
+  }
 `;
 
 const NavigationLinks = () => {
@@ -19,7 +24,7 @@ const NavigationLinks = () => {
         <StyledLink to="/portfolio">Portfolio</StyledLink>
       </li>
       <li>
-        <StyledLink to="/reviews">References</StyledLink>
+        <StyledLink to="/references">References</StyledLink>
       </li>
       <li>
         <StyledLink to="/contact">Contact</StyledLink>

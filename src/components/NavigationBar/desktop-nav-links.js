@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import NavigationLinks from "./nav-links";
+import { Link } from "react-router-dom";
+
+const pages = require("../../data/navigation-data.json");
 
 const DesktopLinks = styled.ul`
   list-style-type: none;
@@ -24,10 +26,26 @@ const DesktopLinks = styled.ul`
   }
 `;
 
+const StyledLink = styled(Link)`
+  color: #bbb;
+  text-decoration: none;
+  :hover {
+    margin-left: 0.5rem;
+    color: white;
+    font-weight: bold;
+  }
+`;
+
 const DesktopNavLinks = () => {
   return (
     <DesktopLinks>
-      <NavigationLinks />
+      {pages.map((page, idx) => {
+        return (
+          <li key={idx}>
+            <StyledLink to={page.url}>{page.text}</StyledLink>
+          </li>
+        );
+      })}
     </DesktopLinks>
   );
 };

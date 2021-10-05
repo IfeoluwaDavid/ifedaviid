@@ -1,0 +1,22 @@
+[
+    {
+        "text": "Home",
+        "url": "/home"
+    },
+    {
+        "text": "About",
+        "url": "/about"
+    },
+    {
+        "text": "Portfolio",
+        "url": "/portfolio"
+    },
+    {
+        "text": "References",
+        "url": "/references"
+    },
+    {
+        "text": "Contact",
+        "url": "/contact"
+    }
+]

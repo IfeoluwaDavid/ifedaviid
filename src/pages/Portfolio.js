@@ -56,8 +56,12 @@ const Portfolio = () => {
                 </Card.Body>
                 <Card.Footer>
                   Stack:{" "}
-                  {project.stack.map((tag) => {
-                    return <Tag bg="dark">{tag}</Tag>;
+                  {project.stack.map((tag, index) => {
+                    return (
+                      <Tag key={index} bg="dark">
+                        {tag}
+                      </Tag>
+                    );
                   })}
                 </Card.Footer>
               </StyledCard>

@@ -1,36 +1,35 @@
 import styled from "styled-components";
-import NavigationLinks from "./nav-links";
+import { Link } from "react-router-dom";
+import StyledButton from "../Button";
 
-const MobileLinks = styled.ul`
-  display: none;
+const pages = require("../../data/navigation-data.json");
+
+const MobileLinks = styled.div`
+  flex-direction: column;
   padding: 10px 15px 0px 15px;
-  list-style-type: none;
+`;
+
+const Button = styled(StyledButton)`
   width: 100%;
-  margin: 0;
-  color: white;
-
-  li {
-    margin: 5px;
-    padding: 15px;
-    border-radius: 5px;
-    background: #343434;
-    letter-spacing: 1px;
-    font-size: 15px;
-
-    :hover {
-      background: grey;
-    }
-  }
-
-  @media (max-width: 1281px) {
-    display: block;
-  }
+  padding: 1rem;
+  text-align: left;
+  margin-bottom: 0.09rem;
+  background: #343434;
+  color: #bbb;
+  font-weight: bold;
+  border: 0px;
 `;
 
 const MobileNavLinks = () => {
   return (
     <MobileLinks>
-      <NavigationLinks />
+      {pages.map((page, idx) => {
+        return (
+          <Link key={idx} to={page.url}>
+            <Button text={page.text} />
+          </Link>
+        );
+      })}
     </MobileLinks>
   );
 };
