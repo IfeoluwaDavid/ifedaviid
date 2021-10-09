@@ -22,6 +22,7 @@ const NavBarContainer = styled.nav`
     height: ${(props) => (props.isOpen ? "26rem" : "4.5rem")};
     transition: height 0.1s;
 
+    align-items: flex-start;
     padding-top: 15px;
     padding-bottom: 15px;
     width: 100%;
