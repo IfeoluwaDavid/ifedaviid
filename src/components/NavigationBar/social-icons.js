@@ -11,7 +11,7 @@ import {
 const IconGroup = styled.span`
   width: auto;
 
-  @media (max-width: 1281px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `;

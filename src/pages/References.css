@@ -1,10 +1,9 @@
-.reviews-page-content {
-  width: 800px;
+.references-page-content {
   display: block;
   justify-content: center;
 }
 
-.reviews-page-comment-container {
+.references-page-comment-container {
   width: auto;
   max-width: 1000px;
   text-align: right;
@@ -12,24 +11,24 @@
   margin-bottom: 10px;
 }
 
-.reviews-page-quote-icon {
+.references-page-quote-icon {
   color: #343434;
   margin: 40px;
   height: 80px;
 }
 
-.reviews-page-comments-list-container {
+.references-page-comments-list-container {
   display: block;
   justify-content: center;
   align-items: center;
 }
 
-.reviews-page-header-container {
+.references-page-header-container {
   display: flex;
   justify-content: space-between;
 }
 
-.reviews-page-header {
+.references-page-header {
   width: auto;
   color: white;
   font-weight: bold;
@@ -38,14 +37,14 @@
   margin-bottom: 20px;
 }
 
-.reviews-page-header-link {
+.references-page-header-link {
   color: white;
   text-decoration: underline;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.reviews-page-quote-icon-container {
+.references-page-quote-icon-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -63,20 +62,22 @@
 .no-comments-placeholder-container {
   display: flex;
   justify-content: center;
-  height: 300px;
   border-radius: 10px;
   background-color: white;
   border: 2px solid #343434;
+  padding: 2rem;
 }
 
 .no-comments-prompt {
-  width: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 60%;
   display: block;
   align-self: center;
   text-align: center;
 }
 
-.reviews-page-comment-item {
+.references-page-comment-item {
   display: flex;
   justify-content: center;
   background: white;
@@ -89,26 +90,26 @@
   align-self: center;
 }
 
-@media (max-width: 1281px) {
-  .reviews-page-header-container {
+@media (max-width: 768px) {
+  .references-page-header-container {
     display: block;
     margin-bottom: 20px;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 20px;
   }
-  .reviews-page-comment-item {
+  .references-page-comment-item {
     display: block;
     padding: 20px 40px 20px 40px;
   }
-  .reviews-page-quote-icon-container {
+  .references-page-quote-icon-container {
     width: 100%;
     margin-right: 0px;
   }
-  .reviews-page-comment-container {
+  .references-page-comment-container {
     text-align: center;
   }
-  .reviews-page-content {
+  .references-page-content {
     min-width: 300px;
   }
   .no-comments-placeholder-container {

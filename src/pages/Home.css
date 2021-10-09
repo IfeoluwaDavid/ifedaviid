@@ -33,7 +33,7 @@
   letter-spacing: 1px;
 }
 
-@media (max-width: 1281px) {
+@media (max-width: 1024px) {
   .home-page-content {
     display: block;
     justify-content: center;

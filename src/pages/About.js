@@ -32,9 +32,11 @@ const About = () => {
           <p className="about-page-content-text-desc">
             My skillset mostly revolves around web development. However, I also
             have strong interests and minimal experience with mobile application
-            development, cloud computing, data science and UI/UX design. In my
-            free time, I enjoy playing soccer, watching movies, learning new
-            stuff, relaxing or taking the time to make things look visually
+            development, cloud computing, data science and UI/UX design.
+          </p>
+          <p className="about-page-content-text-desc">
+            In my free time, I enjoy playing soccer, watching movies, learning
+            new stuff, relaxing or taking the time to make things look visually
             appealing.
           </p>
           <StyledButton

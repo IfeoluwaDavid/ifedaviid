@@ -21,7 +21,7 @@ const DesktopLinks = styled.ul`
     margin-bottom: 7px;
   }
 
-  @media (max-width: 1281px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `;
