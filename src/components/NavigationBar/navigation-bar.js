@@ -54,23 +54,16 @@ const MenuIcon = styled(FontAwesomeIcon)`
 
 const StyledNavTitle = styled.h3`
   color: white;
-<<<<<<< HEAD
   font-weight: bolder;
-=======
-  font-weight: bold;
->>>>>>> 26ddbecab28762541f5e50c8cf0e4462cee816a7
   font-size: 30px;
   letter-spacing: 3px;
   margin: 3px 0px 3px 0px;
 `;
 
 const HomeLink = styled(Link)`
-<<<<<<< HEAD
   :hover {
     text-decoration: none;
   }
-=======
->>>>>>> 26ddbecab28762541f5e50c8cf0e4462cee816a7
   @media (max-width: 1281px) {
     float: right;
     width: 100%;
@@ -79,7 +72,6 @@ const HomeLink = styled(Link)`
   }
 `;
 
-<<<<<<< HEAD
 const NavigationBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
@@ -89,17 +81,6 @@ const NavigationBar = (props) => {
     <NavBarContainer isOpen={isOpen} toggleMenu={toggleMenu}>
       <NavBarItemsContainer>
         <MenuIcon icon={faBars} onClick={() => toggleMenu()} />
-=======
-const NavigationBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleMobileNav = () => {
-    setIsOpen(!isOpen);
-  };
-  return (
-    <NavBarContainer>
-      <NavBarItemsContainer>
-        <MenuIcon icon={faBars} onClick={() => toggleMobileNav()} />
->>>>>>> 26ddbecab28762541f5e50c8cf0e4462cee816a7
         <HomeLink to="/home">
           <StyledNavTitle>IFEDAVIID</StyledNavTitle>
         </HomeLink>
