@@ -2,7 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { withRouter } from "react-router-dom";
 import { Card, Badge } from "react-bootstrap";
+<<<<<<< HEAD
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+=======
+
+>>>>>>> 26ddbecab28762541f5e50c8cf0e4462cee816a7
 import PageTemplate from "./PageTemplate";
 import StyledButton from "../../src/components/Button";
 import "./Portfolio.css";
