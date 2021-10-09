@@ -28,8 +28,7 @@ const CardText = styled(Card.Text)`
 `;
 
 const Tag = styled(Badge)`
-  background: #bbb;
-  margin: 5px;
+  background: #d8d8d8;
 `;
 
 const Portfolio = () => {
@@ -50,6 +49,9 @@ const Portfolio = () => {
             return (
               <StyledCard key={idx}>
                 <Card.Body>
+                  <Tag pill style={{ marginBottom: "1rem" }}>
+                    Academic Project
+                  </Tag>
                   <Title>{project.title}</Title>
                   <CardText>{project.description}</CardText>
                   <StyledButton text="See Demo Documentation" variant="dark" />
@@ -58,7 +60,7 @@ const Portfolio = () => {
                   Stack:{" "}
                   {project.stack.map((tag, index) => {
                     return (
-                      <Tag key={index} bg="dark">
+                      <Tag key={index} bg="secondary" style={{ margin: "5px" }}>
                         {tag}
                       </Tag>
                     );

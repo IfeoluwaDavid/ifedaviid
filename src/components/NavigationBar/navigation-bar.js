@@ -8,7 +8,7 @@ import DesktopNavLinks from "./desktop-nav-links";
 import MobileNavLinks from "./mobile-nav-links";
 import { Link } from "react-router-dom";
 
-const NavBarContainer = styled.div`
+const NavBarContainer = styled.nav`
   background-color: black;
   width: 30%;
   padding: 0;
@@ -57,13 +57,16 @@ const MenuIcon = styled(FontAwesomeIcon)`
 
 const StyledNavTitle = styled.h3`
   color: white;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 30px;
   letter-spacing: 3px;
   margin: 3px 0px 3px 0px;
 `;
 
 const HomeLink = styled(Link)`
+  :hover {
+    text-decoration: none;
+  }
   @media (max-width: 1281px) {
     float: right;
     width: 100%;
