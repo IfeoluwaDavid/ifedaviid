@@ -10,7 +10,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
-import Reviews from "./pages/Reviews";
+import References from "./pages/References";
 
 const App = () => {
   return (
@@ -29,7 +29,7 @@ const App = () => {
           <Portfolio />
         </Route>
         <Route path="/references">
-          <Reviews />
+          <References />
         </Route>
         <Route path="/contact">
           <Contact />

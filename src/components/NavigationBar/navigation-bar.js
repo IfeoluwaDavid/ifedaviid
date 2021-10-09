@@ -10,7 +10,6 @@ import MobileNavLinks from "./mobile-nav-links";
 
 const NavBarContainer = styled.nav`
   background-color: black;
-  width: 30%;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -18,7 +17,7 @@ const NavBarContainer = styled.nav`
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 1281px) {
+  @media (max-width: 768px) {
     height: ${(props) => (props.isOpen ? "26rem" : "4.5rem")};
     transition: height 0.1s;
 
@@ -31,10 +30,17 @@ const NavBarContainer = styled.nav`
 `;
 
 const NavBarItemsContainer = styled.section`
-  margin: 10px;
   width: fit-content;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  transition: margin 1s;
 
-  @media (max-width: 1281px) {
+  @media (max-width: 1440px) {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  @media (max-width: 768px) {
     margin: 0;
     display: flex;
     width: 100%;
@@ -47,7 +53,7 @@ const MenuIcon = styled(FontAwesomeIcon)`
   margin: 10px 30px 0 30px;
   transform: scale(2);
   display: none;
-  @media (max-width: 1281px) {
+  @media (max-width: 768px) {
     display: flex;
   }
 `;
@@ -64,7 +70,7 @@ const HomeLink = styled(Link)`
   :hover {
     text-decoration: none;
   }
-  @media (max-width: 1281px) {
+  @media (max-width: 768px) {
     float: right;
     width: 100%;
     margin-right: 30px;

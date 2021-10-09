@@ -5,9 +5,10 @@ import StyledButton from "../Button";
 const pages = require("../../data/navigation-data.json");
 
 const MobileLinks = styled.div`
+  width: 100%;
   flex-direction: column;
   padding: 10px 15px 0px 15px;
-  @media screen and (min-width: 1281px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 `;
