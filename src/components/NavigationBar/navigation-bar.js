@@ -5,8 +5,8 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import SocialIcons from "./social-icons";
 import DesktopNavLinks from "./desktop-nav-links";
-import MobileNavLinks from "./mobile-nav-links";
 import { Link } from "react-router-dom";
+import MobileNavLinks from "./mobile-nav-links";
 
 const NavBarContainer = styled.nav`
   background-color: black;
@@ -19,17 +19,13 @@ const NavBarContainer = styled.nav`
   align-items: center;
 
   @media (max-width: 1281px) {
-    height: auto;
+    height: ${(props) => (props.isOpen ? "26rem" : "4.5rem")};
+    transition: height 0.1s;
+
     padding-top: 15px;
     padding-bottom: 15px;
     width: 100%;
     position: fixed;
-
-    div {
-      display: flex;
-      width: 100%;
-      margin: 0 auto;
-    }
   }
 `;
 
@@ -75,15 +71,15 @@ const HomeLink = styled(Link)`
   }
 `;
 
-const NavigationBar = () => {
+const NavigationBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-  const toggleMobileNav = () => {
+  const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <NavBarContainer>
+    <NavBarContainer isOpen={isOpen} toggleMenu={toggleMenu}>
       <NavBarItemsContainer>
-        <MenuIcon icon={faBars} onClick={() => toggleMobileNav()} />
+        <MenuIcon icon={faBars} onClick={() => toggleMenu()} />
         <HomeLink to="/home">
           <StyledNavTitle>IFEDAVIID</StyledNavTitle>
         </HomeLink>
