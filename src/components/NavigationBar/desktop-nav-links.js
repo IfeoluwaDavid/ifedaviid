@@ -30,6 +30,7 @@ const StyledLink = styled(Link)`
   color: #bbb;
   text-decoration: none;
   :hover {
+    transition: margin 0.2s;
     margin-left: 0.5rem;
     color: white;
     font-weight: bold;

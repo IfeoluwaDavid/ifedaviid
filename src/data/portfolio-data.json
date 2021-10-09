@@ -1,29 +1,34 @@
 [
   {
+    "type": "Academic Project",
     "title": "Proxx-Machine",
     "description": "My  finalyear collegeproject. An online web and mobile applicationusedby laboratory technicians andstudents for managing records of equipment rentals duringengineering labsessions.",
     "githubURL": "http://sharmadese.site/povertyprediction/public/login.php",
     "stack": ["PHP", "HTML", "CSS", "JS", "MySQL", "Python"]
   },
   {
-    "title": "Two-factor Authentication System",
+    "type": "Academic Project",
+    "title": "Token Based Two-factor Authentication",
     "description": "My  finalyear collegeproject. An online web and mobile applicationusedby laboratory technicians andstudents for managing records of equipment rentals duringengineering labsessions.The web applicationwas developed and designed using HTML, CSS, JavaScript &PHPwhile, the mobile application was builtfor Android using Java.Both mobile and web applications  utilize  the  same MySQL database.",
     "githubURL": "https://github.com/IfeoluwaDavid/token-based-2FA#readme",
     "stack": ["PHP", "HTML", "CSS", "JS", "MySQL"]
   },
   {
+    "type": "Academic Project",
     "title": "University Registration System",
     "description": "ThisJavadesktop applicationis developed using  the Object-Oriented Client-Server Framework (OCSF). It helps manage academic-relatedoperationssuch as student enrollment, course searching andregistration,student grading, designation of instructors to courses, creation of coursesand departments etc.User categories includestudent, faculty instructors and administrative staffmembers.More info available on the GitHub readme section.",
     "githubURL": "https://github.com/IfeoluwaDavid/university-registration-system-urs#readme",
     "stack": ["Java"]
   },
   {
+    "type": "Academic Project",
     "title": "PartCribber (Mobile)",
     "description": "My  finalyear collegeproject. An online web and mobile applicationusedby laboratory technicians andstudents for managing records of equipment rentals duringengineering labsessions.The web applicationwas developed and designed using HTML, CSS, JavaScript &PHPwhile, the mobile application was builtfor Android using Java.",
     "githubURL": "https://play.google.com/store/apps/details?id=ifeoluwa.partscribber&hl=en",
     "stack": ["Android", "Java"]
   },
   {
+    "type": "Academic Project",
     "title": "PartCribber (Web)",
     "description": "My final college year project. An online web and mobile applicationusedby laboratory technicians andstudents for managing records of equipment rentals duringengineering labsessions.The web applicationwas developed and designed using HTML, CSS, JavaScript &PHPwhile, the mobile application was builtfor Android using Java.",
     "githubURL": "https://github.com/IfeoluwaDavid/PCD-Web-App-Project#readme",

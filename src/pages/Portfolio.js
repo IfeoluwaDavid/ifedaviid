@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { withRouter } from "react-router-dom";
 import { Card, Badge } from "react-bootstrap";
-
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import PageTemplate from "./PageTemplate";
 import StyledButton from "../../src/components/Button";
 import "./Portfolio.css";
@@ -28,8 +28,7 @@ const CardText = styled(Card.Text)`
 `;
 
 const Tag = styled(Badge)`
-  background: #bbb;
-  margin: 5px;
+  background: #d8d8d8;
 `;
 
 const Portfolio = () => {
@@ -50,15 +49,22 @@ const Portfolio = () => {
             return (
               <StyledCard key={idx}>
                 <Card.Body>
+                  <Tag pill style={{ marginBottom: "1rem" }}>
+                    {project.type}
+                  </Tag>
                   <Title>{project.title}</Title>
                   <CardText>{project.description}</CardText>
-                  <StyledButton text="See Demo Documentation" variant="dark" />
+                  <StyledButton
+                    text="See Demo Documentation"
+                    icon={faExternalLinkAlt}
+                    variant="dark"
+                  />
                 </Card.Body>
                 <Card.Footer>
                   Stack:{" "}
                   {project.stack.map((tag, index) => {
                     return (
-                      <Tag key={index} bg="dark">
+                      <Tag key={index} bg="secondary" style={{ margin: "5px" }}>
                         {tag}
                       </Tag>
                     );

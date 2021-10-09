@@ -148,6 +148,7 @@ const RecommendationForm = ({ setShowRecommendationForm }) => {
                 </Form.Group>
                 <StyledButton
                   text="Submit"
+                  disabled={Object.keys(errors).length ? true : false}
                   onClick={() => {
                     setFormData(values);
                     toggle();
