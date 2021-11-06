@@ -1,22 +1,32 @@
 [
     {
         "text": "Home",
-        "url": "/home"
+        "url": "/home",
+        "isExternalLink": false
     },
     {
         "text": "About",
-        "url": "/about"
+        "url": "/about",
+        "isExternalLink": false
     },
     {
-        "text": "Portfolio",
-        "url": "/portfolio"
+        "text": "Services",
+        "url": "/",
+        "isExternalLink": false
     },
     {
-        "text": "References",
-        "url": "/references"
+        "text": "Projects",
+        "url": "/portfolio",
+        "isExternalLink": false
+    },
+    {
+        "text": "Blog",
+        "url": "https://www.blog.ifedaviid.com/",
+        "isExternalLink": true
     },
     {
         "text": "Contact",
-        "url": "/contact"
+        "url": "/contact",
+        "isExternalLink": false
     }
 ]
