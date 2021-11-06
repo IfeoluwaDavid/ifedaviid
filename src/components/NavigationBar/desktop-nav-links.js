@@ -26,7 +26,7 @@ const DesktopLinks = styled.ul`
   }
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
   color: #bbb;
   text-decoration: none;
   :hover {
@@ -43,7 +43,15 @@ const DesktopNavLinks = () => {
       {pages.map((page, idx) => {
         return (
           <li key={idx}>
-            <StyledLink to={page.url}>{page.text}</StyledLink>
+            {page.isExternalLink ? (
+              <StyledLink target="_blank" href={page.url}>
+                {page.text}
+              </StyledLink>
+            ) : (
+              <StyledLink as={Link} to={page.url}>
+                {page.text}
+              </StyledLink>
+            )}
           </li>
         );
       })}

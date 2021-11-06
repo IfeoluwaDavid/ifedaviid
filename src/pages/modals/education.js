@@ -31,12 +31,12 @@ const EducationalBackground = () => {
           <MainContainer>
             <DataContainer>
               <p>
-                {school.institutionName} - {school.location}
+                {school.institutionName} ({school.duration})
               </p>
+              <p>{school.location}</p>
               <p>
                 {school.field} ({school.award})
               </p>
-              <p>{school.duration}</p>
               <hr />
             </DataContainer>
           </MainContainer>

@@ -10,7 +10,6 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
-import References from "./pages/References";
 
 const App = () => {
   return (
@@ -27,9 +26,6 @@ const App = () => {
         </Route>
         <Route path="/portfolio">
           <Portfolio />
-        </Route>
-        <Route path="/references">
-          <References />
         </Route>
         <Route path="/contact">
           <Contact />
