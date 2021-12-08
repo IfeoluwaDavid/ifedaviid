@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Twirl as Hamburger } from "hamburger-react";
 
 import SocialIcons from "./social-icons";
 import DesktopNavLinks from "./desktop-nav-links";
@@ -18,7 +19,7 @@ const NavBarContainer = styled.nav`
   align-items: center;
 
   @media (max-width: 768px) {
-    height: ${(props) => (props.isOpen ? "26rem" : "4.5rem")};
+    height: ${(props) => (props.isOpen ? "32rem" : "5rem")};
     transition: height 0.1s;
 
     align-items: flex-start;
@@ -47,12 +48,12 @@ const NavBarItemsContainer = styled.section`
   }
 `;
 
-const MenuIcon = styled(FontAwesomeIcon)`
+const MenuIconContainer = styled.div`
   color: #fff;
   width: auto;
-  margin: 10px 30px 0 30px;
-  transform: scale(2);
   display: none;
+  margin: 0rem 1rem;
+
   @media (max-width: 768px) {
     display: flex;
   }
@@ -63,7 +64,9 @@ const StyledNavTitle = styled.h3`
   font-weight: bolder;
   font-size: 30px;
   letter-spacing: 3px;
-  margin: 3px 0px 3px 0px;
+  @media (max-width: 768px) {
+    margin-top: 0.5rem;
+  }
 `;
 
 const HomeLink = styled(Link)`
@@ -73,7 +76,7 @@ const HomeLink = styled(Link)`
   @media (max-width: 768px) {
     float: right;
     width: 100%;
-    margin-right: 30px;
+    margin-right: 1rem;
     text-align: right;
   }
 `;
@@ -86,7 +89,11 @@ const NavigationBar = (props) => {
   return (
     <NavBarContainer isOpen={isOpen} toggleMenu={toggleMenu}>
       <NavBarItemsContainer>
-        <MenuIcon icon={faBars} onClick={() => toggleMenu()} />
+        {/* <MenuIcon icon={faBars} onClick={() => toggleMenu()} /> */}
+        {/* <Hamburger onClick={() => toggleMenu()} /> */}
+        <MenuIconContainer onClick={() => toggleMenu()}>
+          <Hamburger />
+        </MenuIconContainer>
         <HomeLink to="/home">
           <StyledNavTitle>IFEDAVIID</StyledNavTitle>
         </HomeLink>
