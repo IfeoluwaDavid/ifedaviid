@@ -18,9 +18,9 @@ export const educationHistory = [
   {
     institutionLogo: require("../images/niit.jpg"),
     institutionName: "National Institute of Information Tech. (NIIT)",
-    location: "Lagos, Nigeria",
+    location: "Lagos State, Nigeria",
     field: "Graphic Design",
-    award: "Course Participation Certificate",
+    award: "Bootcamp Program",
     duration: "2014 - 2014",
   },
   {

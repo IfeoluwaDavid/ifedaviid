@@ -1,72 +1,103 @@
-import React, { useState } from "react";
+import React from "react";
 import { withRouter } from "react-router-dom";
-
 import img from "../images/ife-grad.jpg";
 import PageTemplate from "./PageTemplate";
-import StyledButton from "../../src/components/Button";
-import { PopUpModal, usePopUpModal } from "../components/Modal";
-import { EducationalBackground, WorkHistory, Skills } from "../pages/modals";
+import {
+  EducationalBackground,
+  WorkHistory,
+  Skills,
+  Certifications,
+} from "../pages/modals";
+import { Accordion } from "react-bootstrap";
+import styled from "styled-components";
 import "./About.css";
+
+const AccordionItem = styled(Accordion.Item)`
+  display: block;
+  justify-content: center;
+`;
+
+const AccordionHeader = styled(Accordion.Header)`
+  button {
+    border-radius: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: left;
+    border: none;
+    opacity: 0.7;
+    border: 2px solid #efefef;
+    :hover {
+      color: white;
+      font-weight: bolder;
+      background: #343434;
+    }
+  }
+`;
+
+const AccordionBody = styled(Accordion.Body)`
+  color: #bbb;
+  padding: 1rem;
+`;
 
 const About = () => {
   const EDUCATIONAL_BACKGROUND = "Educational Background";
   const WORK_HISTORY = "Work History";
   const SKILLSET = "Skills";
-
-  const [modalTitle, setModalTitle] = useState(null);
-  const [modalContent, setModalContent] = useState(null);
-  const { isShowing, toggle } = usePopUpModal();
+  const CERTS = "Certifications";
 
   return (
     <PageTemplate>
       <div className="about-page-content">
-        <img className="about-page-content-img" alt="panda" src={img} />
-        <div className="about-page-content-text">
-          <h3 className="about-page-content-text-header">About Me</h3>
-          <p className="about-page-content-text-desc">
-            My name is Ifeoluwa David Adese. I'm a happy 24 year old Software
-            Developer at Rebel.com. I'm originally from Lagos State, Nigeria,
-            but I'm currently based in Thunder Bay, Ontario where I attended
-            University.
-          </p>
-          <p className="about-page-content-text-desc">
-            My skillset mostly revolves around web development. However, I also
-            have strong interests and minimal experience with mobile application
-            development, cloud computing, data science and UI/UX design.
-          </p>
-          <p className="about-page-content-text-desc">
-            In my free time, I enjoy playing soccer, watching movies, learning
-            new stuff, relaxing or taking the time to make things look visually
-            appealing.
-          </p>
-          <StyledButton
-            text={EDUCATIONAL_BACKGROUND}
-            onClick={() => {
-              setModalTitle(EDUCATIONAL_BACKGROUND);
-              setModalContent(<EducationalBackground />);
-              toggle();
-            }}
-          />
-          <StyledButton
-            text={WORK_HISTORY}
-            onClick={() => {
-              setModalTitle(WORK_HISTORY);
-              setModalContent(<WorkHistory />);
-              toggle();
-            }}
-          />
-          <StyledButton
-            text={SKILLSET}
-            onClick={() => {
-              setModalTitle(SKILLSET);
-              setModalContent(<Skills />);
-              toggle();
-            }}
-          />
+        <div className="about-page-content-img-and-text">
+          <img className="about-page-content-img" alt="panda" src={img} />
+          <div className="about-page-content-text">
+            <h3 className="about-page-content-text-header">About Me</h3>
+            <p className="about-page-content-text-desc">
+              My name is Ifeoluwa David Adese. I'm a happy 24 year old Software
+              Developer at Rebel.com. I'm originally from Lagos State, Nigeria,
+              but I'm currently based in Thunder Bay, Ontario where I attended
+              University.
+            </p>
+            <p className="about-page-content-text-desc">
+              My skillset mostly revolves around development for progressive web
+              applications. However, I also have strong interests and minimal
+              experience with mobile application development, cloud computing,
+              data science and UI/UX design.
+            </p>
+            <p className="about-page-content-text-desc">
+              In my free time, I enjoy playing soccer, watching movies, learning
+              new stuff, relaxing or taking the time to make things look
+              visually appealing.
+            </p>
+          </div>
         </div>
-        <PopUpModal title={modalTitle} isShowing={isShowing} hide={toggle}>
-          {modalContent}
-        </PopUpModal>
+        <Accordion style={{ zIndex: "1" }}>
+          <AccordionItem eventKey="0">
+            <AccordionHeader>{EDUCATIONAL_BACKGROUND}</AccordionHeader>
+            <AccordionBody>
+              <EducationalBackground />
+            </AccordionBody>
+          </AccordionItem>
+          <AccordionItem eventKey="1">
+            <AccordionHeader>{WORK_HISTORY}</AccordionHeader>
+            <AccordionBody>
+              <WorkHistory />
+            </AccordionBody>
+          </AccordionItem>
+          <AccordionItem eventKey="2">
+            <AccordionHeader>{SKILLSET}</AccordionHeader>
+            <AccordionBody>
+              <Skills />
+            </AccordionBody>
+          </AccordionItem>
+          <AccordionItem eventKey="3">
+            <AccordionHeader>{CERTS}</AccordionHeader>
+            <AccordionBody>
+              <Certifications />
+            </AccordionBody>
+          </AccordionItem>
+        </Accordion>
       </div>
     </PageTemplate>
   );

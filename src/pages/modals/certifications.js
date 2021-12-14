@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { educationHistory } from "../../data/education-data";
+import { certificates } from "../../data/certifications-data";
 
 const MainContainer = styled.div`
   display: flex;
@@ -19,20 +19,16 @@ const DataContainer = styled.div`
   width: 100%;
 `;
 
-const EducationalBackground = () => {
+const Certifications = () => {
   return (
     <div>
-      {educationHistory.map((school, key) => {
+      {certificates.map((cert, key) => {
         return (
           <MainContainer>
             <DataContainer>
-              <p style={{ fontWeight: "bold" }}>
-                {school.institutionName} ({school.duration})
-              </p>
-              <p>{school.location}</p>
-              <p>
-                {school.field} ({school.award})
-              </p>
+              <p style={{ fontWeight: "bold" }}>{cert.title}</p>
+              <p>{cert.duration}</p>
+              <p>Verification Code: {cert.verificationCode}</p>
               <hr style={{ margin: "0.5rem 0.5rem" }} />
             </DataContainer>
           </MainContainer>
@@ -42,4 +38,4 @@ const EducationalBackground = () => {
   );
 };
 
-export default EducationalBackground;
+export default Certifications;

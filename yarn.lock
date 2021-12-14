@@ -1851,9 +1851,9 @@
   "version" "5.1.1"
 
 "@types/invariant@^2.2.33":
-  "integrity" "sha512-lYUtmJ9BqUN688fGY1U1HZoWT1/Jrmgigx2loq4ZcJpICECm/Om3V314BxdzypO0u5PORKGMM6x0OXaljV1YFg=="
-  "resolved" "https://registry.npmjs.org/@types/invariant/-/invariant-2.2.34.tgz"
-  "version" "2.2.34"
+  "integrity" "sha512-DxX1V9P8zdJPYQat1gHyY0xj3efl8gnMVjiM9iCY6y27lj+PoQWkgjt8jDqmovPqULkKVpKRg8J36iQiA+EtEg=="
+  "resolved" "https://registry.npmjs.org/@types/invariant/-/invariant-2.2.35.tgz"
+  "version" "2.2.35"
 
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0", "@types/istanbul-lib-coverage@^2.0.1":
   "integrity" "sha512-sz7iLqvVUg1gIedBOvlkxPlc8/uVzyS5OwGz1cKjXzkl3FpL3al0crU8YGU1WoHkxn0Wxbw5tyi6hvzJKNzFsw=="
@@ -1933,16 +1933,16 @@
   "version" "1.5.4"
 
 "@types/react-transition-group@^4.4.1":
-  "integrity" "sha512-KibDWL6nshuOJ0fu8ll7QnV/LVTo3PzQ9aCPnRUYPfX7eZohHwLIdNHj7pftanREzHNP4/nJa8oeM73uSiavMQ=="
-  "resolved" "https://registry.npmjs.org/@types/react-transition-group/-/react-transition-group-4.4.2.tgz"
-  "version" "4.4.2"
+  "integrity" "sha512-7gAPz7anVK5xzbeQW9wFBDg7G++aPLAFY0QaSMOou9rJZpbuI58WAuJrgu+qR92l61grlnCUe7AFX8KGahAgug=="
+  "resolved" "https://registry.npmjs.org/@types/react-transition-group/-/react-transition-group-4.4.4.tgz"
+  "version" "4.4.4"
   dependencies:
     "@types/react" "*"
 
 "@types/react@*", "@types/react@>=16.14.8", "@types/react@>=16.9.11":
-  "integrity" "sha512-0WwKHUbWuQWOce61UexYuWTGuGY/8JvtUe/dtQ6lR4sZ3UiylHotJeWpf3ArP9+DSGUoLY3wbU59VyMrJps5VQ=="
-  "resolved" "https://registry.npmjs.org/@types/react/-/react-17.0.14.tgz"
-  "version" "17.0.14"
+  "integrity" "sha512-2FS1oTqBGcH/s0E+CjrCCR9+JMpsu9b69RTFO+40ua43ZqP5MmQ4iUde/dMjWR909KxZwmOQIFq6AV6NjEG5xg=="
+  "resolved" "https://registry.npmjs.org/@types/react/-/react-17.0.37.tgz"
+  "version" "17.0.37"
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -4139,9 +4139,9 @@
     "cssom" "~0.3.6"
 
 "csstype@^3.0.2":
-  "integrity" "sha512-jXKhWqXPmlUeoQnF/EhTtTl4C9SnrxSH/jZUih3jmO6lBKr99rP3/+FmrMj4EFpOXzMtXHAZkd3x0E6h6Fgflw=="
-  "resolved" "https://registry.npmjs.org/csstype/-/csstype-3.0.8.tgz"
-  "version" "3.0.8"
+  "integrity" "sha512-2u44ZG2OcNUO9HDp/Jl8C07x6pU/eTR3ncV91SiK3dhG9TWvRVsCoJw14Ckx5DgWkzGA3waZWO3d7pgqpUI/XA=="
+  "resolved" "https://registry.npmjs.org/csstype/-/csstype-3.0.10.tgz"
+  "version" "3.0.10"
 
 "cyclist@^1.0.1":
   "integrity" "sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk="
@@ -5697,6 +5697,11 @@
   dependencies:
     "duplexer" "^0.1.1"
     "pify" "^4.0.1"
+
+"hamburger-react@^2.4.1":
+  "integrity" "sha512-oqG9CrTVi8wM/dyQQh3JJOOfEiol9ChLOqwtjx+hFyRu0nYfe2ymNmzi2wtfQTDyExUdqETdyACZV9KZ9wpApA=="
+  "resolved" "https://registry.npmjs.org/hamburger-react/-/hamburger-react-2.4.1.tgz"
+  "version" "2.4.1"
 
 "handle-thing@^2.0.0":
   "integrity" "sha512-9Qn4yBxelxoh2Ow62nP+Ka/kMnOXRi8BXnRaUwezLNhqelnN49xKz4F/dPP8OYLxLxq6JDtZb2i9XznUQbNPTg=="
@@ -9509,10 +9514,10 @@
     "regenerator-runtime" "^0.13.7"
     "whatwg-fetch" "^3.4.1"
 
-"react-bootstrap@^1.6.1":
-  "integrity" "sha512-ojEPQ6OtyIMdLg0Smofk+85PKN6MLKQX3bU0Vwmok/4yNa8DQ2vCGhO2IgHJvT+ERQZ4X+gAQcdn6msAHSwLBg=="
-  "resolved" "https://registry.npmjs.org/react-bootstrap/-/react-bootstrap-1.6.1.tgz"
-  "version" "1.6.1"
+"react-bootstrap@^2.0.0-beta.0":
+  "integrity" "sha512-9grXyFdznG7r7HT7etkiKHkgqVVgasDFjkTtNCAx9xAQllAjKl6vuBGBVc3F+KLNpdTzrxrx5RWNIgd8ZpascA=="
+  "resolved" "https://registry.npmjs.org/react-bootstrap/-/react-bootstrap-2.0.0-beta.0.tgz"
+  "version" "2.0.0-beta.0"
   dependencies:
     "@babel/runtime" "^7.14.0"
     "@restart/context" "^2.1.4"
@@ -9562,7 +9567,7 @@
     "strip-ansi" "6.0.0"
     "text-table" "0.2.0"
 
-"react-dom@*", "react-dom@^16.0.0 || ^17.0.0", "react-dom@^16.8.0 || ^17", "react-dom@^16.8.0 || ^17.0.0", "react-dom@^17.0.2", "react-dom@>= 16.8.0", "react-dom@>=16.3.0", "react-dom@>=16.6.0", "react-dom@>=16.8.0":
+"react-dom@*", "react-dom@^16.0.0 || ^17.0.0", "react-dom@^16.8.0 || ^17", "react-dom@^16.8.0 || ^17.0.0", "react-dom@^17.0.2", "react-dom@>= 16.8.0", "react-dom@>=16.14.0", "react-dom@>=16.3.0", "react-dom@>=16.6.0":
   "integrity" "sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-17.0.2.tgz"
   "version" "17.0.2"
@@ -9602,9 +9607,9 @@
   "version" "3.0.4"
 
 "react-overlays@^5.0.1":
-  "integrity" "sha512-Qp8dqDIIYgQoHxOGVKHwvQUkDe70/Ja/6dn8iCQAXyPvvpks3+T8scLTZLK8MPBBu+X8ustas6y4U6M6zdmCjA=="
-  "resolved" "https://registry.npmjs.org/react-overlays/-/react-overlays-5.1.0.tgz"
-  "version" "5.1.0"
+  "integrity" "sha512-eCN2s2/+GVZzpnId4XVWtvDPYYBD2EtOGP74hE+8yDskPzFy9+pV1H3ZZihxuRdEbQzzacySaaDkR7xE0ydl4Q=="
+  "resolved" "https://registry.npmjs.org/react-overlays/-/react-overlays-5.1.1.tgz"
+  "version" "5.1.1"
   dependencies:
     "@babel/runtime" "^7.13.8"
     "@popperjs/core" "^2.8.6"
@@ -9733,7 +9738,7 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
-"react@*", "react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0", "react@^16.0.0 || ^17.0.0", "react@^16.8.0 || ^17", "react@^16.8.0 || ^17.0.0", "react@^17.0.2", "react@>= 16", "react@>= 16.8.0", "react@>=0.14.0", "react@>=15", "react@>=15.0.0", "react@>=16.3.0", "react@>=16.3.2", "react@>=16.6.0", "react@>=16.8.0", "react@>=16.x", "react@17.0.2":
+"react@*", "react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0", "react@^16.0.0 || ^17.0.0", "react@^16.8 || ^17", "react@^16.8.0 || ^17", "react@^16.8.0 || ^17.0.0", "react@^17.0.2", "react@>= 16", "react@>= 16.8.0", "react@>=0.14.0", "react@>=15", "react@>=15.0.0", "react@>=16.14.0", "react@>=16.3.0", "react@>=16.3.2", "react@>=16.6.0", "react@>=16.8.0", "react@>=16.x", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"
@@ -10359,10 +10364,10 @@
   dependencies:
     "jquery" "x.*"
 
-"semantic-ui-react@^2.0.3":
-  "integrity" "sha512-a0hGN6XXw64sRSKwWqMCKSI/AGLohxNeWuErS39eswvBbUnLjBij8ZoEdiqDiz/PuWpwYIRjgmQVrut+7h3b2g=="
-  "resolved" "https://registry.npmjs.org/semantic-ui-react/-/semantic-ui-react-2.0.3.tgz"
-  "version" "2.0.3"
+"semantic-ui-react@^2.0.4":
+  "integrity" "sha512-nTlIN/K1iEA7ybut2ICBlPfAushs2afkyUuwQ6vMlYpvLjnnUgN+JKhhoq47MlRuQ2ekdMDZ9OgctViTbDyBaQ=="
+  "resolved" "https://registry.npmjs.org/semantic-ui-react/-/semantic-ui-react-2.0.4.tgz"
+  "version" "2.0.4"
   dependencies:
     "@babel/runtime" "^7.10.5"
     "@fluentui/react-component-event-listener" "~0.51.6"
@@ -10371,8 +10376,8 @@
     "@semantic-ui-react/event-stack" "^3.1.2"
     "clsx" "^1.1.1"
     "keyboard-key" "^1.1.0"
-    "lodash" "^4.17.19"
-    "lodash-es" "^4.17.15"
+    "lodash" "^4.17.21"
+    "lodash-es" "^4.17.21"
     "prop-types" "^15.7.2"
     "react-is" "^16.8.6 || ^17.0.0"
     "react-popper" "^2.2.4"
