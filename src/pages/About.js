@@ -15,29 +15,35 @@ import "./About.css";
 const AccordionItem = styled(Accordion.Item)`
   display: block;
   justify-content: center;
+  border-top: 1px solid #efefef;
+  :last-child {
+    border-bottom: 1px solid #efefef;
+  }
+  h2 {
+    margin-bottom: 0rem;
+  }
 `;
 
 const AccordionHeader = styled(Accordion.Header)`
   button {
-    border-radius: 0.5rem;
+    color: #bbb;
     width: 100%;
+    font-weight: bolder;
     font-size: 1rem;
     padding: 1rem;
     text-align: left;
     border: none;
-    opacity: 0.7;
-    border: 2px solid #efefef;
+    background: #343434;
     :hover {
-      color: white;
-      font-weight: bolder;
-      background: #343434;
+      background: #bbb;
+      color: black;
     }
   }
 `;
 
 const AccordionBody = styled(Accordion.Body)`
   color: #bbb;
-  padding: 1rem;
+  padding: 1rem 2rem;
 `;
 
 const About = () => {
