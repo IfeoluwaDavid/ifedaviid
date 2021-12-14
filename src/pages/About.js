@@ -67,8 +67,8 @@ const About = () => {
             </p>
             <p className="about-page-content-text-desc">
               In my free time, I enjoy playing soccer, watching movies, learning
-              new stuff, relaxing or taking the time to make things look
-              visually appealing.
+              and documenting new stuff, relaxing or taking the time to make
+              things look visually appealing.
             </p>
           </div>
         </div>
