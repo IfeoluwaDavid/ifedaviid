@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Twirl as Hamburger } from "hamburger-react";
 
 import SocialIcons from "./social-icons";
@@ -17,6 +15,7 @@ const NavBarContainer = styled.nav`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 
   @media (max-width: 768px) {
     height: ${(props) => (props.isOpen ? "32rem" : "5rem")};

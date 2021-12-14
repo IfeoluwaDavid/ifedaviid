@@ -6,7 +6,7 @@ const skills = require("../../../src/data/skills-data.json");
 const MainContainer = styled.div`
   display: flex;
   p {
-    margin-bottom: 1px;
+    margin-bottom: 0.5rem;
   }
 
   img {
@@ -46,8 +46,7 @@ const Skills = () => {
                 <strong>{skill.skill}</strong>
                 <p>{skill.yearsOfExperience}</p>
               </span>
-
-              <hr />
+              <hr style={{ margin: "0.5rem 0.5rem" }} />
             </DataContainer>
           </MainContainer>
         );

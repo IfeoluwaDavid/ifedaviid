@@ -4,7 +4,7 @@ import { Formik } from "formik";
 import { Form, Alert, Modal } from "react-bootstrap";
 import { withRouter } from "react-router-dom";
 import * as Yup from "yup";
-
+import styled from "styled-components";
 import greenCheckMarkIcon from "../../src/icons/green-checkmark.png";
 import StyledButton from "../../src/components/Button";
 import PageTemplate from "./PageTemplate";
@@ -13,6 +13,10 @@ import { hasMissingValues } from "../utilities/helpers";
 import "./Contact.css";
 
 const sendEmailConfig = require("../../src/config/send-email-config.json");
+
+const FormGroup = styled(Form.Group)`
+  margin: 1rem 0rem;
+`;
 
 const Contact = () => {
   const [formData, setFormData] = useState({});
@@ -108,7 +112,7 @@ const Contact = () => {
             >
               {({ values, errors, touched, handleBlur, handleChange }) => (
                 <Form>
-                  <Form.Group controlId="exampleForm.ControlInput1">
+                  <FormGroup controlId="exampleForm.ControlInput1">
                     <Form.Control
                       type="text"
                       name="sender_name"
@@ -120,8 +124,8 @@ const Contact = () => {
                     {errors.sender_name && touched.sender_name
                       ? renderErrorMessage(errors.sender_name)
                       : null}
-                  </Form.Group>
-                  <Form.Group controlId="exampleForm.ControlInput1">
+                  </FormGroup>
+                  <FormGroup controlId="exampleForm.ControlInput1">
                     <Form.Control
                       type="email"
                       name="reply_to"
@@ -133,8 +137,8 @@ const Contact = () => {
                     {errors.reply_to && touched.reply_to
                       ? renderErrorMessage(errors.reply_to)
                       : null}
-                  </Form.Group>
-                  <Form.Group controlId="exampleForm.ControlTextarea1">
+                  </FormGroup>
+                  <FormGroup controlId="exampleForm.ControlTextarea1">
                     <Form.Control
                       as="textarea"
                       rows={3}
@@ -147,7 +151,7 @@ const Contact = () => {
                     {errors.sender_message && touched.sender_message
                       ? renderErrorMessage(errors.sender_message)
                       : null}
-                  </Form.Group>
+                  </FormGroup>
                   <StyledButton
                     text="Submit"
                     disabled={Object.keys(errors).length ? true : false}

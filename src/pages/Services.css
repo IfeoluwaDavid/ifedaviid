@@ -1,0 +1,53 @@
+.services-page-content {
+  display: block;
+  justify-content: center;
+}
+
+.services-page-header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.services-page-header {
+  width: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.services-page-content-container {
+  display: block;
+  background: white;
+  max-width: 50rem;
+  height: auto;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  margin: 1rem 0rem;
+}
+
+.services-item-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.services-rates {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .services-item-header {
+    display: block;
+  }
+  .services-page-content-container {
+    min-width: 20rem;
+  }
+}
