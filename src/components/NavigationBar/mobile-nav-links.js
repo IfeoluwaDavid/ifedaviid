@@ -29,9 +29,22 @@ const MobileNavLinks = () => {
     <MobileLinks>
       {pages.map((page, idx) => {
         return (
-          <Link key={idx} to={page.url}>
-            <Button text={page.text} />
-          </Link>
+          <>
+            {page.isExternalLink ? (
+              <a
+                key={idx}
+                target="_blank"
+                href={page.url}
+                rel="noopener noreferrer"
+              >
+                <Button text={page.text} />
+              </a>
+            ) : (
+              <Link key={idx} to={page.url}>
+                <Button text={page.text} />
+              </Link>
+            )}
+          </>
         );
       })}
     </MobileLinks>

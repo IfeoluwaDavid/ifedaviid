@@ -15,13 +15,12 @@ export const Services = () => {
         <div className="services-page-content-container">
           <div className="services-item-header">
             <p className="services-name">Web Design & Development</p>
-            <p className="services-rates">Starting at $100</p>
           </div>
           <p style={{ alignSelf: "center" }}>
-            Is it for fear to wet a widow's eye, That thou consum'st thy self in
-            single life? Ah! if thou issueless shalt hap to die, The world will
-            wail thee like a makeless wife; The world will be thy widow and
-            still weep That thou no form of.
+            From setting up simple CMS-based sites or E-Commerce platforms,
+            using reliable tools and technologies, to developing custom
+            web-based solutions. I'd love to convert your ideas into highly
+            scalable, secure, performance-optimized and SEO-friendly solutions.
           </p>
           <Link to="/contact">
             <StyledButton text="Request Quote" variant="dark" />
@@ -30,13 +29,13 @@ export const Services = () => {
         <div className="services-page-content-container">
           <div className="services-item-header">
             <p className="services-name">Troubleshooting & Coding Assistance</p>
-            <p className="services-rates">Starting at $15/hr</p>
           </div>
           <p>
-            Is it for fear to wet a widow's eye, That thou consum'st thy self in
-            single life? Ah! if thou issueless shalt hap to die, The world will
-            wail thee like a makeless wife; The world will be thy widow and
-            still weep That thou no form of.
+            Need help debugging a coding project or investigating issues with a
+            web-based solution? I can safely troubleshoot any technical problems
+            you may be experiencing with your web technologies or point you in
+            the right direction to find help. Perfect for students learning
+            programming, less technical business owners etc.
           </p>
           <Link to="/contact">
             <StyledButton text="Schedule a Session" variant="dark" />

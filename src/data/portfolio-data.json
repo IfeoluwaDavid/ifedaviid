@@ -1,5 +1,13 @@
 [
   {
+    "type": "Personal Project",
+    "title": "Personal Blog (Headless CMS)",
+    "description": "Since I found effectiveness and value in documenting the new things I learn, I built myself a blog where I can share my knowledge. This blog is managed via Contentful - a content management system which allows the delivery of its content over APIs. I also used Gatsby (a static site generator) to speed up my development process while maintaining optimal performance.",
+    "demoURL": "https://blog.ifedaviid.com/",
+    "githubURL": "https://github.com/IfeoluwaDavid/ifedaviid-blog",
+    "stack": ["React", "Gatsby", "Contentful"]
+  },
+  {
     "type": "Academic Project",
     "title": "Proxx-Machine",
     "description": "My  finalyear collegeproject. An online web and mobile applicationusedby laboratory technicians andstudents for managing records of equipment rentals duringengineering labsessions.",
@@ -19,13 +27,6 @@
     "description": "ThisJavadesktop applicationis developed using  the Object-Oriented Client-Server Framework (OCSF). It helps manage academic-relatedoperationssuch as student enrollment, course searching andregistration,student grading, designation of instructors to courses, creation of coursesand departments etc.User categories includestudent, faculty instructors and administrative staffmembers.More info available on the GitHub readme section.",
     "githubURL": "https://github.com/IfeoluwaDavid/university-registration-system-urs#readme",
     "stack": ["Java"]
-  },
-  {
-    "type": "Academic Project",
-    "title": "PartCribber (Mobile)",
-    "description": "My  finalyear collegeproject. An online web and mobile applicationusedby laboratory technicians andstudents for managing records of equipment rentals duringengineering labsessions.The web applicationwas developed and designed using HTML, CSS, JavaScript &PHPwhile, the mobile application was builtfor Android using Java.",
-    "githubURL": "https://play.google.com/store/apps/details?id=ifeoluwa.partscribber&hl=en",
-    "stack": ["Android", "Java"]
   },
   {
     "type": "Academic Project",

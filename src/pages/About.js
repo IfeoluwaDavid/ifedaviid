@@ -15,12 +15,16 @@ import "./About.css";
 const AccordionItem = styled(Accordion.Item)`
   display: block;
   justify-content: center;
-  border-top: 1px solid #efefef;
+  border-top: 1px solid #bbb;
+  :first-child {
+    border-top: 2px solid #bbb;
+  }
   :last-child {
-    border-bottom: 1px solid #efefef;
+    border-bottom: 1px solid #bbb;
   }
   h2 {
     margin-bottom: 0rem;
+    border-bottom: 0.5px solid #bbb;
   }
 `;
 
