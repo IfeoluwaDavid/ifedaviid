@@ -54,17 +54,49 @@ const Portfolio = () => {
                   </Tag>
                   <Title>{project.title}</Title>
                   <CardText>{project.description}</CardText>
-                  <StyledButton
-                    text="See Demo Documentation"
-                    icon={faExternalLinkAlt}
-                    variant="dark"
-                  />
+                  {project.demoURL ? (
+                    <>
+                      <a
+                        target="_blank"
+                        href={project.demoURL}
+                        rel="noopener noreferrer"
+                      >
+                        <StyledButton
+                          text="Live Demo"
+                          icon={faExternalLinkAlt}
+                          variant="dark"
+                        />
+                      </a>
+                      <a
+                        target="_blank"
+                        href={project.githubURL}
+                        rel="noopener noreferrer"
+                      >
+                        <StyledButton
+                          text="Github ReadMe"
+                          variant="outline-secondary"
+                        />
+                      </a>
+                    </>
+                  ) : (
+                    <a
+                      target="_blank"
+                      href={project.githubURL}
+                      rel="noopener noreferrer"
+                    >
+                      <StyledButton
+                        text="Github ReadMe"
+                        icon={faExternalLinkAlt}
+                        variant="dark"
+                      />
+                    </a>
+                  )}
                 </Card.Body>
                 <Card.Footer>
                   Stack:{" "}
                   {project.stack.map((tag, index) => {
                     return (
-                      <Tag key={index} bg="secondary" style={{ margin: "5px" }}>
+                      <Tag key={index} style={{ margin: "5px" }}>
                         {tag}
                       </Tag>
                     );

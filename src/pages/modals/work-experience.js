@@ -4,13 +4,27 @@ const history = require("../../../src/data/work-history-data.json");
 
 const MainContainer = styled.div`
   display: flex;
+  span {
+    display: flex;
+    justify-content: space-between;
+  }
+  strong {
+    margin-right: 10px;
+  }
   p {
     margin-bottom: 0.5rem;
   }
-
   img {
     height: 100px;
     width: 100px;
+  }
+
+  @media (max-width: 980px) {
+    display: block;
+    span {
+      justify-content: center;
+      display: block;
+    }
   }
 `;
 
@@ -26,9 +40,12 @@ const WorkHistory = () => {
         return (
           <MainContainer>
             <DataContainer>
-              <p>{obj.company}</p>
+              <span>
+                <strong>{obj.company}</strong>
+
+                <p>{obj.duration}</p>
+              </span>
               <p>{obj.position}</p>
-              <p>{obj.duration}</p>
               <hr style={{ margin: "0.5rem 0.5rem" }} />
             </DataContainer>
           </MainContainer>

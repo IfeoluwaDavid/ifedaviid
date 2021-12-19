@@ -17,6 +17,18 @@ const MainContainer = styled.div`
 const DataContainer = styled.div`
   display: block;
   width: 100%;
+
+  span {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 980px) {
+    span {
+      justify-content: center;
+      display: block;
+    }
+  }
 `;
 
 const EducationalBackground = () => {
@@ -26,9 +38,10 @@ const EducationalBackground = () => {
         return (
           <MainContainer>
             <DataContainer>
-              <p style={{ fontWeight: "bold" }}>
-                {school.institutionName} ({school.duration})
-              </p>
+              <span>
+                <p style={{ fontWeight: "bold" }}>{school.institutionName}</p>
+                <p>({school.duration})</p>
+              </span>
               <p>{school.location}</p>
               <p>
                 {school.field} ({school.award})

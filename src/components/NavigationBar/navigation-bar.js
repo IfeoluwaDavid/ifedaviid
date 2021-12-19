@@ -88,8 +88,6 @@ const NavigationBar = (props) => {
   return (
     <NavBarContainer isOpen={isOpen} toggleMenu={toggleMenu}>
       <NavBarItemsContainer>
-        {/* <MenuIcon icon={faBars} onClick={() => toggleMenu()} /> */}
-        {/* <Hamburger onClick={() => toggleMenu()} /> */}
         <MenuIconContainer onClick={() => toggleMenu()}>
           <Hamburger />
         </MenuIconContainer>
