@@ -10,17 +10,18 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
-// import Services from "./pages/Services";
+import RenderMessage from "./pages/RenderMessage";
+import {
+  faExclamationCircle,
+  faWrench,
+} from "@fortawesome/free-solid-svg-icons";
 
 const App = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/home">
-          <Home />
-        </Route>
         <Route exact path="/">
-          <Redirect to="/home" />
+          <Home />
         </Route>
         <Route path="/about">
           <About />
@@ -33,6 +34,27 @@ const App = () => {
         </Route>
         <Route path="/contact">
           <Contact />
+        </Route>
+        <Route path="/blog">
+          <RenderMessage
+            icon={faWrench}
+            title="Almost Ready.."
+            message="My blog is a work in progress and still under construction."
+            slug="/"
+            buttonText="Return Home"
+          />
+        </Route>
+        <Route path="/404">
+          <RenderMessage
+            icon={faExclamationCircle}
+            title="Page Not Found"
+            message="Looks like the page you requested does not exist on this site."
+            slug="/"
+            buttonText="Return Home"
+          />
+        </Route>
+        <Route exact path="*">
+          <Redirect to="/404" />
         </Route>
       </Switch>
     </Router>
