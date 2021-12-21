@@ -1,7 +1,7 @@
 [
     {
         "text": "Home",
-        "url": "/home",
+        "url": "/",
         "isExternalLink": false
     },
     {
@@ -16,8 +16,8 @@
     },
     {
         "text": "Blog",
-        "url": "https://www.blog.ifedaviid.com/",
-        "isExternalLink": true
+        "url": "/blog",
+        "isExternalLink": false
     },
     {
         "text": "Contact",

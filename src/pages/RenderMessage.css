@@ -1,0 +1,38 @@
+.error-page-content {
+  display: block;
+  justify-content: center;
+}
+
+.error-page-header {
+  width: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.error-page-content-container {
+  display: block;
+  text-align: center;
+  background: white;
+  max-width: 50rem;
+  height: auto;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  margin: 1rem 0rem;
+}
+
+.error-name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .error-item-header {
+    display: block;
+  }
+
+  .error-page-content-container {
+    min-width: 20rem;
+  }
+}
