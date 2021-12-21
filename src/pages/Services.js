@@ -23,7 +23,7 @@ export const Services = () => {
             scalable, secure, performance-optimized and SEO-friendly solutions.
           </p>
           <Link to="/contact">
-            <StyledButton text="Request Quote" variant="dark" />
+            <StyledButton text="Learn More" variant="dark" />
           </Link>
         </div>
         <div className="services-page-content-container">
@@ -38,7 +38,7 @@ export const Services = () => {
             programming, less technical business owners etc.
           </p>
           <Link to="/contact">
-            <StyledButton text="Schedule a Session" variant="dark" />
+            <StyledButton text="Learn More" variant="dark" />
           </Link>
         </div>
       </div>
