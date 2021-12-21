@@ -10,7 +10,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
-import Services from "./pages/Services";
+// import Services from "./pages/Services";
 
 const App = () => {
   return (
@@ -25,9 +25,9 @@ const App = () => {
         <Route path="/about">
           <About />
         </Route>
-        <Route path="/services">
+        {/* <Route path="/services">
           <Services />
-        </Route>
+        </Route> */}
         <Route path="/portfolio">
           <Portfolio />
         </Route>
