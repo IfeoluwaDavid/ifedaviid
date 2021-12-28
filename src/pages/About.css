@@ -2,35 +2,36 @@
   display: block;
   justify-content: center;
   display: block;
-  /* margin: 0rem 10rem; */
   min-width: 20rem;
   max-width: 80%;
 }
 
 .about-page-content-img-and-text {
   display: flex;
-  justify-content: center;
-  margin: 2rem 0rem;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  margin-bottom: 2rem;
   /* min-width: 80%; */
 }
 
 .about-page-content-img {
-  height: 100%;
   width: 40%;
   border-radius: 1rem;
   align-self: center;
+  /* margin: 2rem; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .about-page-content-text {
-  width: 50%;
   margin-left: 50px;
+  line-height: 1.8rem;
 }
 
 .about-page-content-text-header {
   color: white;
   font-size: 30px;
   font-weight: bold;
+  margin: 2rem 0rem;
 }
 
 .about-page-content-text-desc {
@@ -47,7 +48,6 @@
     display: block;
     text-align: center;
   }
-
   .about-page-content-text-header {
     justify-content: center;
     margin-top: 40px;

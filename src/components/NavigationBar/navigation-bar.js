@@ -18,7 +18,7 @@ const NavBarContainer = styled.nav`
   z-index: 2;
 
   @media (max-width: 768px) {
-    height: ${(props) => (props.isOpen ? "32rem" : "5rem")};
+    height: ${(props) => (props.isOpen ? "27rem" : "5rem")};
     transition: height 0.1s;
 
     align-items: flex-start;
@@ -91,7 +91,7 @@ const NavigationBar = (props) => {
         <MenuIconContainer onClick={() => toggleMenu()}>
           <Hamburger />
         </MenuIconContainer>
-        <HomeLink to="/home">
+        <HomeLink to="/">
           <StyledNavTitle>IFEDAVIID</StyledNavTitle>
         </HomeLink>
         <DesktopNavLinks />

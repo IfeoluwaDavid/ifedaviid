@@ -14,12 +14,10 @@ const Home = () => {
           <img className="home-page-content-img" alt="ProfilePhoto" src={img} />
         </div>
         <div className="home-page-content-text">
-          <h3 className="home-page-content-text-header">
-            Ifeoluwa David Adese
-          </h3>
+          <h3 className="home-page-content-text-header">Ife David Adese</h3>
           <p className="home-page-content-text-desc">
-            I'm a Software Developer based in Thunder Bay and I love to design
-            and build web and mobile applications.
+            I'm a Software Developer based in Ottawa, Canada. I design and build
+            pretty and reliable web solutions.
           </p>
           <Link to="/portfolio">
             <StyledButton text="View Portfolio" />

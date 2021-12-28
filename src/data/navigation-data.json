@@ -16,8 +16,8 @@
     },
     {
         "text": "Blog",
-        "url": "/blog",
-        "isExternalLink": false
+        "url": "https://www.blog.ifedaviid.com/",
+        "isExternalLink": true
     },
     {
         "text": "Contact",
