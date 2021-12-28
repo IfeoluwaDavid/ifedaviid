@@ -26,19 +26,35 @@ const SocialIcon = styled(FontAwesomeIcon)`
 const SocialIcons = () => {
   return (
     <IconGroup>
-      <a href="https://www.facebook.com/ifedaviid">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.facebook.com/ifedaviid"
+      >
         <SocialIcon icon={faFacebookF} />
       </a>
-      <a href="https://www.instagram.com/ifedaviid/">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.instagram.com/ifedaviid/"
+      >
         <SocialIcon icon={faInstagram} />
       </a>
-      <a href="https://github.com/IfeoluwaDavid">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://github.com/IfeoluwaDavid"
+      >
         <SocialIcon icon={faGithub} />
       </a>
-      <a href="https://www.linkedin.com/in/ife-david-adese-194a56a8/">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.linkedin.com/in/ifedaviid/"
+      >
         <SocialIcon icon={faLinkedin} />
       </a>
-      <a href="/contact">
+      <a target="_blank" rel="noopener noreferrer" href="/contact">
         <SocialIcon icon={faYahoo} />
       </a>
     </IconGroup>

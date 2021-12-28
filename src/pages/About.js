@@ -64,21 +64,21 @@ const About = () => {
           <div className="about-page-content-text">
             <h3 className="about-page-content-text-header">About Me</h3>
             <p className="about-page-content-text-desc">
-              My name is Ifeoluwa David Adese. I'm a happy 24 year old Software
-              Developer at Rebel.com. I'm originally from Lagos State, Nigeria,
-              but I'm currently based in Thunder Bay, Ontario where I attended
+              My name is Ife David Adese. I'm a happy 24 year old Software
+              Developer at Rebel.com. I'm a Nigerian by nationality, but I'm
+              currently based in Thunder Bay, Ontario where I attended
               University.
             </p>
             <p className="about-page-content-text-desc">
               My skillset mostly revolves around development for progressive web
               applications. However, I also have strong interests and minimal
-              experience with mobile application development, cloud computing,
-              data science and UI/UX design.
+              experience with UI/UX design, cloud computing and anything data
+              science.
             </p>
             <p className="about-page-content-text-desc">
-              In my free time, I enjoy playing soccer, watching movies, learning
-              and documenting new stuff, relaxing or taking the time to make
-              things look visually appealing.
+              In my free time, I enjoy playing soccer, watching movies,
+              relaxing, learning and documenting new stuff or taking the time to
+              make things look visually appealing.
             </p>
           </div>
         </div>

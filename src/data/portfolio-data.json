@@ -9,29 +9,22 @@
   },
   {
     "type": "Academic Project",
-    "title": "Proxx-Machine",
-    "description": "My  finalyear collegeproject. An online web and mobile applicationusedby laboratory technicians andstudents for managing records of equipment rentals duringengineering labsessions.",
-    "githubURL": "http://sharmadese.site/povertyprediction/public/login.php",
-    "stack": ["PHP", "HTML", "CSS", "JS", "MySQL", "Python"]
-  },
-  {
-    "type": "Academic Project",
     "title": "Token Based Two-factor Authentication",
-    "description": "My  finalyear collegeproject. An online web and mobile applicationusedby laboratory technicians andstudents for managing records of equipment rentals duringengineering labsessions.The web applicationwas developed and designed using HTML, CSS, JavaScript &PHPwhile, the mobile application was builtfor Android using Java.Both mobile and web applications  utilize  the  same MySQL database.",
+    "description": "A project during my software safety & security course at the University. The task was to build a web app authentication system resistant to shoulder-surfing. The project also required a database implementation of access control matrices. It was developed using HTML, CSS, JavaScript & PHP. It uses a relational MySQL database (PHPMYADMIN). Preview the end-product on the GitHub readme section.",
     "githubURL": "https://github.com/IfeoluwaDavid/token-based-2FA#readme",
     "stack": ["PHP", "HTML", "CSS", "JS", "MySQL"]
   },
   {
     "type": "Academic Project",
     "title": "University Registration System",
-    "description": "ThisJavadesktop applicationis developed using  the Object-Oriented Client-Server Framework (OCSF). It helps manage academic-relatedoperationssuch as student enrollment, course searching andregistration,student grading, designation of instructors to courses, creation of coursesand departments etc.User categories includestudent, faculty instructors and administrative staffmembers.More info available on the GitHub readme section.",
+    "description": "This Java desktop application was developed using the Object-Oriented Client-Server Framework (OCSF). It helps manage academic-related operations such as student enrollment, searching and registration or courses, student grading, designation of instructors to courses, creation of courses and departments. User categories include students, faculty instructors and administrative staff members. More info available on the GitHub readme section.",
     "githubURL": "https://github.com/IfeoluwaDavid/university-registration-system-urs#readme",
     "stack": ["Java"]
   },
   {
     "type": "Academic Project",
     "title": "PartCribber (Web)",
-    "description": "My final college year project. An online web and mobile applicationusedby laboratory technicians andstudents for managing records of equipment rentals duringengineering labsessions.The web applicationwas developed and designed using HTML, CSS, JavaScript &PHPwhile, the mobile application was builtfor Android using Java.",
+    "description": "My final college year project. An online web and mobile application used by laboratory technicians and students for managing records of equipment rentals during engineering lab sessions. The web application was developed using HTML, CSS, JavaScript & PHP while, its native mobile application was built using Java and specifically for Android devices.",
     "githubURL": "https://github.com/IfeoluwaDavid/PCD-Web-App-Project#readme",
     "stack": ["PHP", "HTML", "CSS", "JS", "MySQL"]
   }

@@ -21,10 +21,12 @@ const StyledCard = styled(Card)`
 
 const Title = styled(Card.Title)`
   font-weight: bold;
+  line-height: 1.8rem;
 `;
 
 const CardText = styled(Card.Text)`
   color: #343434;
+  line-height: 1.6rem;
 `;
 
 const Tag = styled(Badge)`
