@@ -9,6 +9,14 @@
   },
   {
     "type": "Academic Project",
+    "title": "Proxx-Machine",
+    "description": "My final University year project which required a mixture of research (i.e. data science/machine learning) and application development. Its performs the CRUD operations required for creating, submitting and managing applications submitted by regular users to administrative users. It also uses Machine Learning to predict the eligibility of the submitted applications before approval/disapproval by an admin.",
+    "demoURL": "https://youtu.be/XxGvxWl8veg",
+    "githubURL": "https://github.com/IfeoluwaDavid/proxx-machine",
+    "stack": ["PHP", "HTML", "CSS", "JS", "MySQL", "Python"]
+  },
+  {
+    "type": "Academic Project",
     "title": "Token Based Two-factor Authentication",
     "description": "A project during my software safety & security course at the University. The task was to build a web app authentication system resistant to shoulder-surfing. The project also required a database implementation of access control matrices. It was developed using HTML, CSS, JavaScript & PHP. It uses a relational MySQL database (PHPMYADMIN). Preview the end-product on the GitHub readme section.",
     "githubURL": "https://github.com/IfeoluwaDavid/token-based-2FA#readme",

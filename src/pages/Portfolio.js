@@ -64,7 +64,7 @@ const Portfolio = () => {
                         rel="noopener noreferrer"
                       >
                         <StyledButton
-                          text="Live Demo"
+                          text="Demo"
                           icon={faExternalLinkAlt}
                           variant="dark"
                         />
