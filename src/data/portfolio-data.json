@@ -10,7 +10,7 @@
   {
     "type": "Academic Project",
     "title": "Proxx-Machine",
-    "description": "My final University year project which required a mixture of research (i.e. data science/machine learning) and application development (i.e. web). Its performs the CRUD operations required for creating, submitting and managing applications submitted by regular users to administrative users. It also uses Machine Learning to predict the eligibility of the submitted applications before approval/disapproval by an admin.",
+    "description": "My final University year project which required a mixture of research (i.e. data science/machine learning) and application development. Its performs the CRUD operations required for creating, submitting and managing applications submitted by regular users to administrative users. It also uses Machine Learning to predict the eligibility of the submitted applications before approval/disapproval by an admin.",
     "demoURL": "https://youtu.be/XxGvxWl8veg",
     "githubURL": "https://github.com/IfeoluwaDavid/proxx-machine",
     "stack": ["PHP", "HTML", "CSS", "JS", "MySQL", "Python"]
