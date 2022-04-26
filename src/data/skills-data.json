@@ -4,10 +4,6 @@
         "yearsOfExperience": "1-2 years"
     },
     {
-        "skill": "Javascript",
-        "yearsOfExperience": "1-2 years"
-    },
-    {
         "skill": "AWS",
         "yearsOfExperience": "< 1 year"
     },
@@ -20,19 +16,23 @@
         "yearsOfExperience": "< 1 year"
     },
     {
-        "skill": "Java",
+        "skill": "Gatsby",
         "yearsOfExperience": "1-2 years"
     },
     {
-        "skill": "RDBM (MySQL)",
+        "skill": "Java",
+        "yearsOfExperience": "1 year"
+    },
+    {
+        "skill": "MySQL",
         "yearsOfExperience": "1-2 years"
     },
     {
         "skill": "PHP",
-        "yearsOfExperience": "2+ years"
+        "yearsOfExperience": "1 year"
     },
     {
-        "skill": "HTML/CSS",
+        "skill": "HTML/CSS/JS",
         "yearsOfExperience": "3+ years"
     },
     {
@@ -40,4 +40,3 @@
         "yearsOfExperience": "< 1 year"
     }
 ]
-  

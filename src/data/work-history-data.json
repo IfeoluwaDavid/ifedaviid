@@ -1,13 +1,13 @@
 [
     {
-        "company": "Rebel.com",
-        "position": "Software Developer",
-        "duration": "Jan 2021 - Present"
+        "company": "GoDaddy",
+        "position": "Software Development Engineer",
+        "duration": "Apr 2022 - Present"
     },
     {
         "company": "Rebel.com",
-        "position": "Software Developer Intern",
-        "duration": "May 2020 - Dec 2020"
+        "position": "Software Developer",
+        "duration": "May 2020 - Apr 2022"
     },
     {
         "company": "Freelance",
@@ -15,4 +15,3 @@
         "duration": "Jul 2019 - Nov 2019"
     }
 ]
-  

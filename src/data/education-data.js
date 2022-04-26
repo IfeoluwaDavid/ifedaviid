@@ -15,28 +15,4 @@ export const educationHistory = [
     award: "Advanced Diploma",
     duration: "2014 - 2018",
   },
-  {
-    institutionLogo: require("../images/niit.jpg"),
-    institutionName: "National Institute of Information Tech. (NIIT)",
-    location: "Lagos State, Nigeria",
-    field: "Graphic Design",
-    award: "Bootcamp Program",
-    duration: "2014 - 2014",
-  },
-  {
-    institutionLogo: require("../images/cayley.jpg"),
-    institutionName: "Covenant University",
-    location: "Ogun State, Nigeria",
-    field: "Building Technology",
-    award: "Transferred",
-    duration: "2013 - 2014",
-  },
-  {
-    institutionLogo: require("../images/cayley.jpg"),
-    institutionName: "Cayley College",
-    location: "Lagos State, Nigeria",
-    field: "Sciences",
-    award: "High School Certificate",
-    duration: "2007 - 2013",
-  },
 ];

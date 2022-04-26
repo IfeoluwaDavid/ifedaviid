@@ -64,21 +64,22 @@ const About = () => {
           <div className="about-page-content-text">
             <h3 className="about-page-content-text-header">About Me</h3>
             <p className="about-page-content-text-desc">
-              My name is Ife David Adese. I'm a happy 24 year old Software
-              Developer at Rebel.com. I'm a Nigerian by nationality, but I'm
-              currently based in Thunder Bay, Ontario where I attended
-              University.
+              My name is Ife David Adese. I'm a Software
+              Engineer based in Ottawa, Canada. Academically, I majored in Computer and
+              Software Engineering and my professional experience mostly revolves around
+              building web applications. However, I also have strong interests and minimal
+              experience with UI/UX design, cloud computing and anything data science.
             </p>
             <p className="about-page-content-text-desc">
-              My skillset mostly revolves around development for progressive web
-              applications. However, I also have strong interests and minimal
-              experience with UI/UX design, cloud computing and anything data
-              science.
+              I aim to be a self-sufficient Software Engineer strongly capable of building quality
+              large scale applications. Hence, in addition to my academic background, I'm constantly
+              improving my craft as a developer through my current job, online courses and personal hands-on projects which can be
+              found in the portfolio section of this site. In my free time, I enjoy relaxing, watching
+              documentaries, learning new stuff or taking the time to make things look visually appealing
+              - even the really minor things.
             </p>
             <p className="about-page-content-text-desc">
-              In my free time, I enjoy playing soccer, watching movies,
-              relaxing, learning and documenting new stuff or taking the time to
-              make things look visually appealing.
+
             </p>
           </div>
         </div>
